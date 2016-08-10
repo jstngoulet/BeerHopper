@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D3B35A87F65360A57CDF92BD97A7482437C58D11",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D3B35A87F65360A57CDF92BD97A7482437C58D11" : 0,
+    "EBB414D3626AA97FA55F27D2249EAF415E2C8AC0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "73F24F63-207F-4473-86FD-AC64ABC47647",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D3B35A87F65360A57CDF92BD97A7482437C58D11" : "Beer_Hopper_iOS\/",
+    "EBB414D3626AA97FA55F27D2249EAF415E2C8AC0" : "crony-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Beer Hopper",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Beer_Hopper\/Beer Hopper.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jstngoulet\/BeerHopper",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D3B35A87F65360A57CDF92BD97A7482437C58D11"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/crony-team\/crony-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EBB414D3626AA97FA55F27D2249EAF415E2C8AC0"
+    }
+  ]
+}

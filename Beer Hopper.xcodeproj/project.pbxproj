@@ -1,0 +1,1684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC36EFD3BFA0995525A66758 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 932800C1A560C90AEFD670E8 /* libPods.a */; };
+		D003AF681CFE6E0B007A0471 /* NothingFoundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF661CFE6E0B007A0471 /* NothingFoundTableViewCell.m */; };
+		D003AF691CFE6E0B007A0471 /* NothingFoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D003AF671CFE6E0B007A0471 /* NothingFoundTableViewCell.xib */; };
+		D012C6391C8BF10B0094F8AB /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = D012C6381C8BF10B0094F8AB /* LoginView.m */; };
+		D012C63C1C8BF1290094F8AB /* CronyCount.m in Sources */ = {isa = PBXBuildFile; fileRef = D012C63B1C8BF1290094F8AB /* CronyCount.m */; };
+		D012C63F1C8BF1380094F8AB /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = D012C63E1C8BF1380094F8AB /* Error.m */; };
+		D012C6421C8C03F00094F8AB /* ForumDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D012C6411C8C03F00094F8AB /* ForumDetailViewController.m */; };
+		D012C6451C8C0C890094F8AB /* CommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D012C6441C8C0C890094F8AB /* CommentView.m */; };
+		D017F8B51C94D5F100E66CE3 /* MiniDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = D017F8B41C94D5F100E66CE3 /* MiniDetailView.m */; };
+		D01CB3FF1D1A09260093B7FB /* Submit_WithBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CB3FE1D1A09260093B7FB /* Submit_WithBorder.png */; };
+		D01CB4011D1A0AE10093B7FB /* Submit_WithBorder_Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CB4001D1A0AE10093B7FB /* Submit_WithBorder_Disabled.png */; };
+		D01CB4051D1BACEC0093B7FB /* SingleTutorialPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D01CB4041D1BACEC0093B7FB /* SingleTutorialPage.m */; };
+		D01CB4081D1BB2690093B7FB /* MainTutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = D01CB4071D1BB2690093B7FB /* MainTutorial.m */; };
+		D01CB40B1D1BB4AD0093B7FB /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D01CB40A1D1BB4AD0093B7FB /* TutorialViewController.m */; };
+		D01CB40E1D1BB5B30093B7FB /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D01CB40D1D1BB5B30093B7FB /* Constants.m */; };
+		D01CB4161D1CB5240093B7FB /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CB4151D1CB5240093B7FB /* arrow.png */; };
+		D01CB4181D1CB8000093B7FB /* Info2.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CB4171D1CB8000093B7FB /* Info2.png */; };
+		D01CB41C1D1CD9540093B7FB /* Maybe_Face_Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CB4191D1CD9530093B7FB /* Maybe_Face_Disabled.png */; };
+		D01CB41D1D1CD9540093B7FB /* Happy_Face_Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CB41A1D1CD9540093B7FB /* Happy_Face_Disabled.png */; };
+		D01CB41E1D1CD9540093B7FB /* Sad_Face_Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CB41B1D1CD9540093B7FB /* Sad_Face_Disabled.png */; };
+		D01CCCA51CF545E50033BD9D /* Phone2.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CCCA21CF545E50033BD9D /* Phone2.png */; };
+		D01CCCA61CF545E50033BD9D /* Speech2.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CCCA31CF545E50033BD9D /* Speech2.png */; };
+		D01CCCA71CF545E50033BD9D /* Map2.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CCCA41CF545E50033BD9D /* Map2.png */; };
+		D01CCCA91CF568CA0033BD9D /* gift.png in Resources */ = {isa = PBXBuildFile; fileRef = D01CCCA81CF568CA0033BD9D /* gift.png */; };
+		D02F7C5C1D30320100EFFBAE /* HowToLikeBeers.png in Resources */ = {isa = PBXBuildFile; fileRef = D02F7C5B1D30320100EFFBAE /* HowToLikeBeers.png */; };
+		D02F7C5E1D30385600EFFBAE /* HowToLikeBrewery.png in Resources */ = {isa = PBXBuildFile; fileRef = D02F7C5D1D30385600EFFBAE /* HowToLikeBrewery.png */; };
+		D02F7C601D303B0300EFFBAE /* NoEventsFound.png in Resources */ = {isa = PBXBuildFile; fileRef = D02F7C5F1D303B0300EFFBAE /* NoEventsFound.png */; };
+		D02F7C631D303D7C00EFFBAE /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = D02F7C621D303D7C00EFFBAE /* Alert.m */; };
+		D02F7C651D30529E00EFFBAE /* NoPostsFound.png in Resources */ = {isa = PBXBuildFile; fileRef = D02F7C641D30529E00EFFBAE /* NoPostsFound.png */; };
+		D04D6A3B1C4C608A00FB19E5 /* ForumsCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D04D6A391C4C608A00FB19E5 /* ForumsCellClass.m */; };
+		D04D6A3C1C4C608A00FB19E5 /* ForumsCellClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A3A1C4C608A00FB19E5 /* ForumsCellClass.xib */; };
+		D04D6A3F1C4C62AC00FB19E5 /* ForumObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D04D6A3E1C4C62AC00FB19E5 /* ForumObject.m */; };
+		D04D6A421C4DA37B00FB19E5 /* weepingwollow-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A411C4DA37B00FB19E5 /* weepingwollow-trim.png */; };
+		D04D6A441C4DA3EA00FB19E5 /* sisters-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A431C4DA3EA00FB19E5 /* sisters-trim.png */; };
+		D04D6A461C4DA46400FB19E5 /* endlessriver-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A451C4DA46400FB19E5 /* endlessriver-trim.png */; };
+		D04D6A481C4DA4A300FB19E5 /* darkcloud-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A471C4DA4A300FB19E5 /* darkcloud-trim.png */; };
+		D04D6A4A1C4DA53F00FB19E5 /* parkday-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A491C4DA53F00FB19E5 /* parkday-trim.png */; };
+		D04D6A4C1C4DA57500FB19E5 /* porch-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A4B1C4DA57500FB19E5 /* porch-trim.png */; };
+		D04D6A4E1C4DA5A100FB19E5 /* neighborhood-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A4D1C4DA5A100FB19E5 /* neighborhood-trim.png */; };
+		D04D6A501C4DA5C400FB19E5 /* SnowFlurry_GlassAndBottle_cropped.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A4F1C4DA5C400FB19E5 /* SnowFlurry_GlassAndBottle_cropped.png */; };
+		D04D6A521C4DA60200FB19E5 /* tripel-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A511C4DA60200FB19E5 /* tripel-trim.png */; };
+		D04D6A541C4DA63400FB19E5 /* silent-night-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A531C4DA63400FB19E5 /* silent-night-trim.png */; };
+		D04D6A561C4DA65800FB19E5 /* homegrown-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A551C4DA65800FB19E5 /* homegrown-trim.png */; };
+		D04D6A581C4DA68B00FB19E5 /* windowpane-blackberries-trim.png in Resources */ = {isa = PBXBuildFile; fileRef = D04D6A571C4DA68B00FB19E5 /* windowpane-blackberries-trim.png */; };
+		D04D6A5E1C514DE200FB19E5 /* HopperData.m in Sources */ = {isa = PBXBuildFile; fileRef = D04D6A5D1C514DE200FB19E5 /* HopperData.m */; };
+		D04D6A6B1C52052600FB19E5 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04D6A6A1C52052600FB19E5 /* EventDetailViewController.m */; };
+		D05E93A11CBC4975005B65E9 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D05E93A01CBC4975005B65E9 /* CustomTableView.m */; };
+		D05E93A51CBE03C6005B65E9 /* BeerHopperLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D05E93A41CBE03C6005B65E9 /* BeerHopperLogo.png */; };
+		D05E93A71CBE03D7005B65E9 /* Beer_Hopper_Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = D05E93A61CBE03D7005B65E9 /* Beer_Hopper_Banner.png */; };
+		D05E93A91CBEE189005B65E9 /* Mizo Broadway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D05E93A81CBEE183005B65E9 /* Mizo Broadway.ttf */; };
+		D05E93AB1CC1971E005B65E9 /* BeerGlassImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D05E93AA1CC1971E005B65E9 /* BeerGlassImage.png */; };
+		D05E93B21CC199D0005B65E9 /* FavoritesBreweryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D05E93B11CC199D0005B65E9 /* FavoritesBreweryViewController.m */; };
+		D05E93BA1CC2056B005B65E9 /* BreweryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D05E93B91CC2056B005B65E9 /* BreweryView.m */; };
+		D05E93BC1CC207D6005B65E9 /* FavoriteBreweryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05E93BB1CC207D6005B65E9 /* FavoriteBreweryCell.xib */; };
+		D05E93BE1CC2FA14005B65E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D05E93BD1CC2FA14005B65E9 /* GoogleService-Info.plist */; };
+		D06D04A51C48AA5400F03C1C /* ForumsMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D06D04A41C48AA5400F03C1C /* ForumsMain.m */; };
+		D06D04A81C49BCC000F03C1C /* BreweryPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D06D04A71C49BCC000F03C1C /* BreweryPageView.m */; };
+		D06D04AC1C49C79100F03C1C /* IMG_5443.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D06D04AA1C49C79100F03C1C /* IMG_5443.JPG */; };
+		D06D04B11C49C7C800F03C1C /* Mother-Earth-Sunny-Haze.png in Resources */ = {isa = PBXBuildFile; fileRef = D06D04B01C49C7C800F03C1C /* Mother-Earth-Sunny-Haze.png */; };
+		D06D04B31C49C7CC00F03C1C /* mother-earth-brewing-dark-cloud-dunkel-lager-beer-north-carolina-usa-10571889.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D06D04B21C49C7CC00F03C1C /* mother-earth-brewing-dark-cloud-dunkel-lager-beer-north-carolina-usa-10571889.jpg */; };
+		D06D04B61C4AD3B600F03C1C /* BeerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D06D04B51C4AD3B600F03C1C /* BeerView.m */; };
+		D06D04B91C4AD5E200F03C1C /* Icon-eto-thumbs-up.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D06D04B81C4AD5E200F03C1C /* Icon-eto-thumbs-up.tiff */; };
+		D06D04BB1C4AD5F600F03C1C /* mp-chat.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D06D04BA1C4AD5F600F03C1C /* mp-chat.tiff */; };
+		D06D04C21C4AE32C00F03C1C /* ThumbsUp.png in Resources */ = {isa = PBXBuildFile; fileRef = D06D04C01C4AE32C00F03C1C /* ThumbsUp.png */; };
+		D06D04C31C4AE32C00F03C1C /* ChatBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D06D04C11C4AE32C00F03C1C /* ChatBubble.png */; };
+		D06D04C51C4AE3AB00F03C1C /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = D06D04C41C4AE3AB00F03C1C /* Info.png */; };
+		D06D04C71C4AEA8000F03C1C /* Peanut Butter Milk Stout1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D06D04C61C4AEA8000F03C1C /* Peanut Butter Milk Stout1.JPG */; };
+		D06D04CF1C4AFD2E00F03C1C /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06D04CE1C4AFD2E00F03C1C /* EventCell.xib */; };
+		D06D04D21C4AFD4C00F03C1C /* EventCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D06D04D11C4AFD4C00F03C1C /* EventCellClass.m */; };
+		D06D04D51C4B004B00F03C1C /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = D06D04D41C4B004B00F03C1C /* Event.m */; };
+		D06D04D81C4B04C900F03C1C /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06D04D71C4B04C900F03C1C /* EventsViewController.m */; };
+		D06F07B61C47407600B53848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F07B51C47407600B53848 /* main.m */; };
+		D06F07B91C47407600B53848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F07B81C47407600B53848 /* AppDelegate.m */; };
+		D06F07C21C47407600B53848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06F07C01C47407600B53848 /* Main.storyboard */; };
+		D06F07C41C47407600B53848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06F07C31C47407600B53848 /* Assets.xcassets */; };
+		D06F07C71C47407600B53848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06F07C51C47407600B53848 /* LaunchScreen.storyboard */; };
+		D06F07D21C47407600B53848 /* Beer_HopperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F07D11C47407600B53848 /* Beer_HopperTests.m */; };
+		D06F07DD1C47407600B53848 /* Beer_HopperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F07DC1C47407600B53848 /* Beer_HopperUITests.m */; };
+		D06F07EC1C47432100B53848 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F07EB1C47432100B53848 /* MainNavigationController.m */; };
+		D06F07EF1C4743C600B53848 /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F07EE1C4743C600B53848 /* Orange.png */; };
+		D06F07F21C47694A00B53848 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F07F11C47694A00B53848 /* Home.m */; };
+		D06F07F51C47695F00B53848 /* HomeDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F07F41C47695F00B53848 /* HomeDetail.m */; };
+		D06F07FF1C47789800B53848 /* Favorites.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F07FE1C47789800B53848 /* Favorites.m */; };
+		D06F08021C4778BA00B53848 /* Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F08011C4778BA00B53848 /* Routes.m */; };
+		D06F08051C4778DA00B53848 /* Forums.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F08041C4778DA00B53848 /* Forums.m */; };
+		D06F08081C4778ED00B53848 /* NewBrewery.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F08071C4778ED00B53848 /* NewBrewery.m */; };
+		D06F08241C480A2E00B53848 /* New.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F081F1C480A2E00B53848 /* New.png */; };
+		D06F08251C480A2E00B53848 /* Forums.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08201C480A2E00B53848 /* Forums.png */; };
+		D06F08261C480A2E00B53848 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08211C480A2E00B53848 /* Star.png */; };
+		D06F08271C480A2E00B53848 /* Routes.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08221C480A2E00B53848 /* Routes.png */; };
+		D06F08281C480A2E00B53848 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08231C480A2E00B53848 /* Home.png */; };
+		D06F082E1C48144600B53848 /* Star (Filled).png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08291C48144600B53848 /* Star (Filled).png */; };
+		D06F082F1C48144600B53848 /* Routes (Filled).png in Resources */ = {isa = PBXBuildFile; fileRef = D06F082A1C48144600B53848 /* Routes (Filled).png */; };
+		D06F08301C48144600B53848 /* New (Filled).png in Resources */ = {isa = PBXBuildFile; fileRef = D06F082B1C48144600B53848 /* New (Filled).png */; };
+		D06F08311C48144600B53848 /* Home (Filled).png in Resources */ = {isa = PBXBuildFile; fileRef = D06F082C1C48144600B53848 /* Home (Filled).png */; };
+		D06F08321C48144600B53848 /* Forums (Filled).png in Resources */ = {isa = PBXBuildFile; fileRef = D06F082D1C48144600B53848 /* Forums (Filled).png */; };
+		D06F08351C48155900B53848 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06F08341C48155900B53848 /* MapKit.framework */; };
+		D06F08381C482A5300B53848 /* BreweryHomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F08371C482A5300B53848 /* BreweryHomePage.m */; };
+		D06F083C1C4832E700B53848 /* Lines.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F083B1C4832E700B53848 /* Lines.png */; };
+		D06F083E1C48396100B53848 /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F083D1C48396100B53848 /* Profile.png */; };
+		D06F08421C483D3400B53848 /* OpenInMaps.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F083F1C483D3400B53848 /* OpenInMaps.png */; };
+		D06F08431C483D3400B53848 /* CallBrewery.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08401C483D3400B53848 /* CallBrewery.png */; };
+		D06F08441C483D3400B53848 /* BreweryMessageBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08411C483D3400B53848 /* BreweryMessageBoard.png */; };
+		D06F08491C483F7C00B53848 /* MotherEarthLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08481C483F7C00B53848 /* MotherEarthLogo.png */; };
+		D06F084B1C4840DC00B53848 /* iron_fist_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D06F084A1C4840DC00B53848 /* iron_fist_logo.jpg */; };
+		D06F084D1C4840E100B53848 /* iron-fist-brewing.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F084C1C4840E100B53848 /* iron-fist-brewing.png */; };
+		D06F084F1C48411B00B53848 /* d61f64_fadea0deb21e9062773dd32c6b1d97e5.png_srz_981_570_85_22_0.50_1.20_0.00.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F084E1C48411B00B53848 /* d61f64_fadea0deb21e9062773dd32c6b1d97e5.png_srz_981_570_85_22_0.50_1.20_0.00.png */; };
+		D06F08521C484EE500B53848 /* BreweryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06F08511C484EE500B53848 /* BreweryCell.xib */; };
+		D06F08551C484FD800B53848 /* BreweryCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F08541C484FD800B53848 /* BreweryCellClass.m */; };
+		D06F08581C485F5F00B53848 /* Brewery.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F08571C485F5F00B53848 /* Brewery.m */; };
+		D06F085B1C485F7900B53848 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F085A1C485F7900B53848 /* Beer.m */; };
+		D06F08661C4867CE00B53848 /* iconiTunesArtWork-512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F085C1C4867CE00B53848 /* iconiTunesArtWork-512@2x.png */; };
+		D06F08671C4867CE00B53848 /* iconiTunesArtWork-512@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F085D1C4867CE00B53848 /* iconiTunesArtWork-512@3x.png */; };
+		D06F08681C4867CE00B53848 /* icon_iPad-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F085E1C4867CE00B53848 /* icon_iPad-29@2x.png */; };
+		D06F08691C4867CE00B53848 /* icon_iPad-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F085F1C4867CE00B53848 /* icon_iPad-29@3x.png */; };
+		D06F086A1C4867CE00B53848 /* icon_iPad-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08601C4867CE00B53848 /* icon_iPad-40@2x.png */; };
+		D06F086B1C4867CE00B53848 /* icon_iPad-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08611C4867CE00B53848 /* icon_iPad-40@3x.png */; };
+		D06F086C1C4867CE00B53848 /* icon_iPad-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08621C4867CE00B53848 /* icon_iPad-76@2x.png */; };
+		D06F086D1C4867CE00B53848 /* icon_iPad-76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08631C4867CE00B53848 /* icon_iPad-76@3x.png */; };
+		D06F086E1C4867CE00B53848 /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08641C4867CE00B53848 /* icon-60@2x.png */; };
+		D06F086F1C4867CE00B53848 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D06F08651C4867CE00B53848 /* icon-60@3x.png */; };
+		D07267CD1C5EC8C7005F5282 /* BreweryDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07267CC1C5EC8C7005F5282 /* BreweryDetailsViewController.m */; };
+		D07267CF1C6020DF005F5282 /* SearchingForBrewery.png in Resources */ = {isa = PBXBuildFile; fileRef = D07267CE1C6020DF005F5282 /* SearchingForBrewery.png */; };
+		D07267D11C605E06005F5282 /* Home2.png in Resources */ = {isa = PBXBuildFile; fileRef = D07267D01C605E06005F5282 /* Home2.png */; };
+		D07267D31C605EF0005F5282 /* Home2Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = D07267D21C605EF0005F5282 /* Home2Empty.png */; };
+		D0924CBD1D0B44570016EDFB /* turntable.png in Resources */ = {isa = PBXBuildFile; fileRef = D0924CBC1D0B44570016EDFB /* turntable.png */; };
+		D0924CBF1D0B44A40016EDFB /* photo-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = D0924CBE1D0B44A40016EDFB /* photo-camera.png */; };
+		D0924CC11D0FC2640016EDFB /* favorites-button.png in Resources */ = {isa = PBXBuildFile; fileRef = D0924CC01D0FC2640016EDFB /* favorites-button.png */; };
+		D0924CC41D146F850016EDFB /* Add Comment_Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D0924CC21D146F850016EDFB /* Add Comment_Disabled.png */; };
+		D0924CC51D146F850016EDFB /* Submit_Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D0924CC31D146F850016EDFB /* Submit_Disabled.png */; };
+		D094CA501CF7A0FC002B771C /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = D094CA4E1CF7A0FC002B771C /* calendar.png */; };
+		D094CA511CF7A0FC002B771C /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D094CA4F1CF7A0FC002B771C /* clock.png */; };
+		D094CA541CF7E907002B771C /* ImageActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = D094CA531CF7E907002B771C /* ImageActivityView.m */; };
+		D094CA561CF8B181002B771C /* ChatBubble2.png in Resources */ = {isa = PBXBuildFile; fileRef = D094CA551CF8B181002B771C /* ChatBubble2.png */; };
+		D094CA581CF8B2B6002B771C /* ThumbsDown.png in Resources */ = {isa = PBXBuildFile; fileRef = D094CA571CF8B2B6002B771C /* ThumbsDown.png */; };
+		D0A0B1FB1D299BE300415E3A /* Beer2.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A0B1FA1D299BE300415E3A /* Beer2.png */; };
+		D0A0B1FE1D2C506800415E3A /* MyAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A0B1FD1D2C506800415E3A /* MyAnalytics.m */; };
+		D0B4999C1C4B496200E66F7A /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B4999B1C4B496200E66F7A /* RoutesViewController.m */; };
+		D0B4999F1C4B497600E66F7A /* RouteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B4999E1C4B497600E66F7A /* RouteObject.m */; };
+		D0B499A31C4B499F00E66F7A /* RouteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B499A11C4B499F00E66F7A /* RouteCell.m */; };
+		D0B499A41C4B499F00E66F7A /* RouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B499A21C4B499F00E66F7A /* RouteCell.xib */; };
+		D0B499A61C4B74E900E66F7A /* booze-brothers-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B499A51C4B74E900E66F7A /* booze-brothers-logo.png */; };
+		D0B499A81C4B74F000E66F7A /* 1536496_425636430945880_4526480723997387063_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0B499A71C4B74F000E66F7A /* 1536496_425636430945880_4526480723997387063_n.jpg */; };
+		D0B499AA1C4B7BD400E66F7A /* Belching-Beaver-Brewery-Small-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0B499A91C4B7BD400E66F7A /* Belching-Beaver-Brewery-Small-5.jpg */; };
+		D0B499AC1C4B7BD800E66F7A /* belching_beaver_brewery_t500x552.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D0B499AB1C4B7BD800E66F7A /* belching_beaver_brewery_t500x552.jpeg */; };
+		D0C4460F1D050AFA00239E52 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C4460E1D050AFA00239E52 /* ImageButton.m */; };
+		D0C446121D05424D00239E52 /* BeerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C446111D05424D00239E52 /* BeerDetailViewController.m */; };
+		D0C446171D06737500239E52 /* Happy_Face.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C446141D06737500239E52 /* Happy_Face.png */; };
+		D0C446181D06737500239E52 /* Maybe_Face.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C446151D06737500239E52 /* Maybe_Face.png */; };
+		D0C446191D06737500239E52 /* Sad_Face.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C446161D06737500239E52 /* Sad_Face.png */; };
+		D0C4461D1D06753C00239E52 /* Add Comment.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C4461B1D06753C00239E52 /* Add Comment.png */; };
+		D0C4461E1D06753C00239E52 /* Submit.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C4461C1D06753C00239E52 /* Submit.png */; };
+		D0C446211D075F8900239E52 /* TextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C446201D075F8900239E52 /* TextInputView.m */; };
+		D0C446241D0794D900239E52 /* RatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C446231D0794D900239E52 /* RatingView.m */; };
+		D0C446271D0798B800239E52 /* RatingsMasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C446261D0798B800239E52 /* RatingsMasterView.m */; };
+		D0EABB111D1E2429005E6C51 /* LikedBeersNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EABB101D1E2429005E6C51 /* LikedBeersNavigationViewController.m */; };
+		D0EABB141D1E243A005E6C51 /* LikedBeersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EABB131D1E243A005E6C51 /* LikedBeersViewController.m */; };
+		D0EABB181D219168005E6C51 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EABB171D219168005E6C51 /* AppInfoViewController.m */; };
+		D0EABB1B1D219970005E6C51 /* NothingFoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0EABB1A1D219970005E6C51 /* NothingFoundView.m */; };
+		D0EABB1D1D2638D6005E6C51 /* Info3.png in Resources */ = {isa = PBXBuildFile; fileRef = D0EABB1C1D2638D6005E6C51 /* Info3.png */; };
+		D0F27D4C1CF3BE9D0065AF07 /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D371CF3BE8B0065AF07 /* SF-UI-Display-Black.otf */; };
+		D0F27D4D1CF3BE9D0065AF07 /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D381CF3BE8B0065AF07 /* SF-UI-Display-Bold.otf */; };
+		D0F27D4E1CF3BE9D0065AF07 /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D391CF3BE8B0065AF07 /* SF-UI-Display-Heavy.otf */; };
+		D0F27D4F1CF3BE9D0065AF07 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3A1CF3BE8B0065AF07 /* SF-UI-Display-Light.otf */; };
+		D0F27D501CF3BE9D0065AF07 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3B1CF3BE8B0065AF07 /* SF-UI-Display-Medium.otf */; };
+		D0F27D511CF3BE9D0065AF07 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3C1CF3BE8B0065AF07 /* SF-UI-Display-Regular.otf */; };
+		D0F27D521CF3BE9D0065AF07 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3D1CF3BE8B0065AF07 /* SF-UI-Display-Semibold.otf */; };
+		D0F27D531CF3BE9D0065AF07 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3E1CF3BE8B0065AF07 /* SF-UI-Display-Thin.otf */; };
+		D0F27D541CF3BE9D0065AF07 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3F1CF3BE8B0065AF07 /* SF-UI-Display-Ultralight.otf */; };
+		D0F27D551CF3BE9D0065AF07 /* SF-UI-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D401CF3BE8B0065AF07 /* SF-UI-Text-Bold.otf */; };
+		D0F27D561CF3BE9D0065AF07 /* SF-UI-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D411CF3BE8B0065AF07 /* SF-UI-Text-BoldItalic.otf */; };
+		D0F27D571CF3BE9D0065AF07 /* SF-UI-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D421CF3BE8B0065AF07 /* SF-UI-Text-Heavy.otf */; };
+		D0F27D581CF3BE9D0065AF07 /* SF-UI-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D431CF3BE8B0065AF07 /* SF-UI-Text-HeavyItalic.otf */; };
+		D0F27D591CF3BE9D0065AF07 /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D441CF3BE8B0065AF07 /* SF-UI-Text-Light.otf */; };
+		D0F27D5A1CF3BE9D0065AF07 /* SF-UI-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D451CF3BE8B0065AF07 /* SF-UI-Text-LightItalic.otf */; };
+		D0F27D5B1CF3BE9D0065AF07 /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D461CF3BE8B0065AF07 /* SF-UI-Text-Medium.otf */; };
+		D0F27D5C1CF3BE9D0065AF07 /* SF-UI-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D471CF3BE8B0065AF07 /* SF-UI-Text-MediumItalic.otf */; };
+		D0F27D5D1CF3BE9D0065AF07 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D481CF3BE8B0065AF07 /* SF-UI-Text-Regular.otf */; };
+		D0F27D5E1CF3BE9D0065AF07 /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D491CF3BE8B0065AF07 /* SF-UI-Text-RegularItalic.otf */; };
+		D0F27D5F1CF3BE9D0065AF07 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D4A1CF3BE8B0065AF07 /* SF-UI-Text-Semibold.otf */; };
+		D0F27D601CF3BE9D0065AF07 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D4B1CF3BE8B0065AF07 /* SF-UI-Text-SemiboldItalic.otf */; };
+		D0F27D611CF3C25E0065AF07 /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D371CF3BE8B0065AF07 /* SF-UI-Display-Black.otf */; };
+		D0F27D621CF3C25E0065AF07 /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D381CF3BE8B0065AF07 /* SF-UI-Display-Bold.otf */; };
+		D0F27D631CF3C25E0065AF07 /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D391CF3BE8B0065AF07 /* SF-UI-Display-Heavy.otf */; };
+		D0F27D641CF3C25E0065AF07 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3A1CF3BE8B0065AF07 /* SF-UI-Display-Light.otf */; };
+		D0F27D651CF3C25E0065AF07 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3B1CF3BE8B0065AF07 /* SF-UI-Display-Medium.otf */; };
+		D0F27D661CF3C25E0065AF07 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3C1CF3BE8B0065AF07 /* SF-UI-Display-Regular.otf */; };
+		D0F27D671CF3C25E0065AF07 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3D1CF3BE8B0065AF07 /* SF-UI-Display-Semibold.otf */; };
+		D0F27D681CF3C25E0065AF07 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3E1CF3BE8B0065AF07 /* SF-UI-Display-Thin.otf */; };
+		D0F27D691CF3C25E0065AF07 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3F1CF3BE8B0065AF07 /* SF-UI-Display-Ultralight.otf */; };
+		D0F27D6A1CF3C25E0065AF07 /* SF-UI-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D401CF3BE8B0065AF07 /* SF-UI-Text-Bold.otf */; };
+		D0F27D6B1CF3C25E0065AF07 /* SF-UI-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D411CF3BE8B0065AF07 /* SF-UI-Text-BoldItalic.otf */; };
+		D0F27D6C1CF3C25E0065AF07 /* SF-UI-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D421CF3BE8B0065AF07 /* SF-UI-Text-Heavy.otf */; };
+		D0F27D6D1CF3C25E0065AF07 /* SF-UI-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D431CF3BE8B0065AF07 /* SF-UI-Text-HeavyItalic.otf */; };
+		D0F27D6E1CF3C25E0065AF07 /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D441CF3BE8B0065AF07 /* SF-UI-Text-Light.otf */; };
+		D0F27D6F1CF3C25E0065AF07 /* SF-UI-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D451CF3BE8B0065AF07 /* SF-UI-Text-LightItalic.otf */; };
+		D0F27D701CF3C25E0065AF07 /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D461CF3BE8B0065AF07 /* SF-UI-Text-Medium.otf */; };
+		D0F27D711CF3C25E0065AF07 /* SF-UI-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D471CF3BE8B0065AF07 /* SF-UI-Text-MediumItalic.otf */; };
+		D0F27D721CF3C25E0065AF07 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D481CF3BE8B0065AF07 /* SF-UI-Text-Regular.otf */; };
+		D0F27D731CF3C25E0065AF07 /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D491CF3BE8B0065AF07 /* SF-UI-Text-RegularItalic.otf */; };
+		D0F27D741CF3C25E0065AF07 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D4A1CF3BE8B0065AF07 /* SF-UI-Text-Semibold.otf */; };
+		D0F27D751CF3C25E0065AF07 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D4B1CF3BE8B0065AF07 /* SF-UI-Text-SemiboldItalic.otf */; };
+		D0F27D761CF3C25E0065AF07 /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D371CF3BE8B0065AF07 /* SF-UI-Display-Black.otf */; };
+		D0F27D771CF3C25E0065AF07 /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D381CF3BE8B0065AF07 /* SF-UI-Display-Bold.otf */; };
+		D0F27D781CF3C25E0065AF07 /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D391CF3BE8B0065AF07 /* SF-UI-Display-Heavy.otf */; };
+		D0F27D791CF3C25E0065AF07 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3A1CF3BE8B0065AF07 /* SF-UI-Display-Light.otf */; };
+		D0F27D7A1CF3C25E0065AF07 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3B1CF3BE8B0065AF07 /* SF-UI-Display-Medium.otf */; };
+		D0F27D7B1CF3C25E0065AF07 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3C1CF3BE8B0065AF07 /* SF-UI-Display-Regular.otf */; };
+		D0F27D7C1CF3C25E0065AF07 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3D1CF3BE8B0065AF07 /* SF-UI-Display-Semibold.otf */; };
+		D0F27D7D1CF3C25E0065AF07 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3E1CF3BE8B0065AF07 /* SF-UI-Display-Thin.otf */; };
+		D0F27D7E1CF3C25E0065AF07 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D3F1CF3BE8B0065AF07 /* SF-UI-Display-Ultralight.otf */; };
+		D0F27D7F1CF3C25E0065AF07 /* SF-UI-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D401CF3BE8B0065AF07 /* SF-UI-Text-Bold.otf */; };
+		D0F27D801CF3C25E0065AF07 /* SF-UI-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D411CF3BE8B0065AF07 /* SF-UI-Text-BoldItalic.otf */; };
+		D0F27D811CF3C25E0065AF07 /* SF-UI-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D421CF3BE8B0065AF07 /* SF-UI-Text-Heavy.otf */; };
+		D0F27D821CF3C25E0065AF07 /* SF-UI-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D431CF3BE8B0065AF07 /* SF-UI-Text-HeavyItalic.otf */; };
+		D0F27D831CF3C25E0065AF07 /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D441CF3BE8B0065AF07 /* SF-UI-Text-Light.otf */; };
+		D0F27D841CF3C25E0065AF07 /* SF-UI-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D451CF3BE8B0065AF07 /* SF-UI-Text-LightItalic.otf */; };
+		D0F27D851CF3C25E0065AF07 /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D461CF3BE8B0065AF07 /* SF-UI-Text-Medium.otf */; };
+		D0F27D861CF3C25E0065AF07 /* SF-UI-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D471CF3BE8B0065AF07 /* SF-UI-Text-MediumItalic.otf */; };
+		D0F27D871CF3C25E0065AF07 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D481CF3BE8B0065AF07 /* SF-UI-Text-Regular.otf */; };
+		D0F27D881CF3C25E0065AF07 /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D491CF3BE8B0065AF07 /* SF-UI-Text-RegularItalic.otf */; };
+		D0F27D891CF3C25E0065AF07 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D4A1CF3BE8B0065AF07 /* SF-UI-Text-Semibold.otf */; };
+		D0F27D8A1CF3C25E0065AF07 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D4B1CF3BE8B0065AF07 /* SF-UI-Text-SemiboldItalic.otf */; };
+		D0F27D8C1CF500B60065AF07 /* BeerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D8B1CF500B60065AF07 /* BeerView.xib */; };
+		D0F27D8F1CF5059C0065AF07 /* BeerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F27D8E1CF5059C0065AF07 /* BeerTableViewCell.m */; };
+		D0F27D921CF508E40065AF07 /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F27D911CF508E40065AF07 /* beer.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D06F07CE1C47407600B53848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06F07A91C47407600B53848 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06F07B01C47407600B53848;
+			remoteInfo = "Beer Hopper";
+		};
+		D06F07D91C47407600B53848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06F07A91C47407600B53848 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06F07B01C47407600B53848;
+			remoteInfo = "Beer Hopper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84FCEF97379245BF2F5B591B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8FBE0090D01219A6D6DDFEBB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		932800C1A560C90AEFD670E8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D003AF651CFE6E0B007A0471 /* NothingFoundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NothingFoundTableViewCell.h; sourceTree = "<group>"; };
+		D003AF661CFE6E0B007A0471 /* NothingFoundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NothingFoundTableViewCell.m; sourceTree = "<group>"; };
+		D003AF671CFE6E0B007A0471 /* NothingFoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundTableViewCell.xib; sourceTree = "<group>"; };
+		D012C6371C8BF10B0094F8AB /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		D012C6381C8BF10B0094F8AB /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		D012C63A1C8BF1290094F8AB /* CronyCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CronyCount.h; sourceTree = "<group>"; };
+		D012C63B1C8BF1290094F8AB /* CronyCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CronyCount.m; sourceTree = "<group>"; };
+		D012C63D1C8BF1380094F8AB /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		D012C63E1C8BF1380094F8AB /* Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
+		D012C6401C8C03F00094F8AB /* ForumDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumDetailViewController.h; sourceTree = "<group>"; };
+		D012C6411C8C03F00094F8AB /* ForumDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumDetailViewController.m; sourceTree = "<group>"; };
+		D012C6431C8C0C890094F8AB /* CommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentView.h; sourceTree = "<group>"; };
+		D012C6441C8C0C890094F8AB /* CommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentView.m; sourceTree = "<group>"; };
+		D017F8B31C94D5F100E66CE3 /* MiniDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniDetailView.h; sourceTree = "<group>"; };
+		D017F8B41C94D5F100E66CE3 /* MiniDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniDetailView.m; sourceTree = "<group>"; };
+		D01CB3FE1D1A09260093B7FB /* Submit_WithBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Submit_WithBorder.png; sourceTree = "<group>"; };
+		D01CB4001D1A0AE10093B7FB /* Submit_WithBorder_Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Submit_WithBorder_Disabled.png; sourceTree = "<group>"; };
+		D01CB4031D1BACEC0093B7FB /* SingleTutorialPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTutorialPage.h; sourceTree = "<group>"; };
+		D01CB4041D1BACEC0093B7FB /* SingleTutorialPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTutorialPage.m; sourceTree = "<group>"; };
+		D01CB4061D1BB2690093B7FB /* MainTutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTutorial.h; sourceTree = "<group>"; };
+		D01CB4071D1BB2690093B7FB /* MainTutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTutorial.m; sourceTree = "<group>"; };
+		D01CB4091D1BB4AD0093B7FB /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
+		D01CB40A1D1BB4AD0093B7FB /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
+		D01CB40C1D1BB5B30093B7FB /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D01CB40D1D1BB5B30093B7FB /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		D01CB4101D1CA3CF0093B7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D01CB4151D1CB5240093B7FB /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		D01CB4171D1CB8000093B7FB /* Info2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info2.png; sourceTree = "<group>"; };
+		D01CB4191D1CD9530093B7FB /* Maybe_Face_Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maybe_Face_Disabled.png; sourceTree = "<group>"; };
+		D01CB41A1D1CD9540093B7FB /* Happy_Face_Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Happy_Face_Disabled.png; sourceTree = "<group>"; };
+		D01CB41B1D1CD9540093B7FB /* Sad_Face_Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sad_Face_Disabled.png; sourceTree = "<group>"; };
+		D01CCCA21CF545E50033BD9D /* Phone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phone2.png; sourceTree = "<group>"; };
+		D01CCCA31CF545E50033BD9D /* Speech2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speech2.png; sourceTree = "<group>"; };
+		D01CCCA41CF545E50033BD9D /* Map2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map2.png; sourceTree = "<group>"; };
+		D01CCCA81CF568CA0033BD9D /* gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift.png; sourceTree = "<group>"; };
+		D02F7C5B1D30320100EFFBAE /* HowToLikeBeers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HowToLikeBeers.png; sourceTree = "<group>"; };
+		D02F7C5D1D30385600EFFBAE /* HowToLikeBrewery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HowToLikeBrewery.png; sourceTree = "<group>"; };
+		D02F7C5F1D303B0300EFFBAE /* NoEventsFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoEventsFound.png; sourceTree = "<group>"; };
+		D02F7C611D303D7C00EFFBAE /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alert.h; path = "../../../crony-ios/Crony/Alert.h"; sourceTree = "<group>"; };
+		D02F7C621D303D7C00EFFBAE /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alert.m; path = "../../../crony-ios/Crony/Alert.m"; sourceTree = "<group>"; };
+		D02F7C641D30529E00EFFBAE /* NoPostsFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoPostsFound.png; sourceTree = "<group>"; };
+		D04D6A381C4C608A00FB19E5 /* ForumsCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumsCellClass.h; sourceTree = "<group>"; };
+		D04D6A391C4C608A00FB19E5 /* ForumsCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumsCellClass.m; sourceTree = "<group>"; };
+		D04D6A3A1C4C608A00FB19E5 /* ForumsCellClass.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForumsCellClass.xib; sourceTree = "<group>"; };
+		D04D6A3D1C4C62AC00FB19E5 /* ForumObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumObject.h; sourceTree = "<group>"; };
+		D04D6A3E1C4C62AC00FB19E5 /* ForumObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumObject.m; sourceTree = "<group>"; };
+		D04D6A411C4DA37B00FB19E5 /* weepingwollow-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weepingwollow-trim.png"; sourceTree = "<group>"; };
+		D04D6A431C4DA3EA00FB19E5 /* sisters-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sisters-trim.png"; sourceTree = "<group>"; };
+		D04D6A451C4DA46400FB19E5 /* endlessriver-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "endlessriver-trim.png"; sourceTree = "<group>"; };
+		D04D6A471C4DA4A300FB19E5 /* darkcloud-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "darkcloud-trim.png"; sourceTree = "<group>"; };
+		D04D6A491C4DA53F00FB19E5 /* parkday-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parkday-trim.png"; sourceTree = "<group>"; };
+		D04D6A4B1C4DA57500FB19E5 /* porch-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "porch-trim.png"; sourceTree = "<group>"; };
+		D04D6A4D1C4DA5A100FB19E5 /* neighborhood-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "neighborhood-trim.png"; sourceTree = "<group>"; };
+		D04D6A4F1C4DA5C400FB19E5 /* SnowFlurry_GlassAndBottle_cropped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnowFlurry_GlassAndBottle_cropped.png; sourceTree = "<group>"; };
+		D04D6A511C4DA60200FB19E5 /* tripel-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tripel-trim.png"; sourceTree = "<group>"; };
+		D04D6A531C4DA63400FB19E5 /* silent-night-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "silent-night-trim.png"; sourceTree = "<group>"; };
+		D04D6A551C4DA65800FB19E5 /* homegrown-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homegrown-trim.png"; sourceTree = "<group>"; };
+		D04D6A571C4DA68B00FB19E5 /* windowpane-blackberries-trim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "windowpane-blackberries-trim.png"; sourceTree = "<group>"; };
+		D04D6A5C1C514DE200FB19E5 /* HopperData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HopperData.h; sourceTree = "<group>"; };
+		D04D6A5D1C514DE200FB19E5 /* HopperData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HopperData.m; sourceTree = "<group>"; };
+		D04D6A691C52052600FB19E5 /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
+		D04D6A6A1C52052600FB19E5 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
+		D05E939F1CBC4975005B65E9 /* CustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableView.h; sourceTree = "<group>"; };
+		D05E93A01CBC4975005B65E9 /* CustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
+		D05E93A41CBE03C6005B65E9 /* BeerHopperLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeerHopperLogo.png; sourceTree = "<group>"; };
+		D05E93A61CBE03D7005B65E9 /* Beer_Hopper_Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beer_Hopper_Banner.png; sourceTree = "<group>"; };
+		D05E93A81CBEE183005B65E9 /* Mizo Broadway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mizo Broadway.ttf"; sourceTree = "<group>"; };
+		D05E93AA1CC1971E005B65E9 /* BeerGlassImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeerGlassImage.png; sourceTree = "<group>"; };
+		D05E93B01CC199D0005B65E9 /* FavoritesBreweryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesBreweryViewController.h; sourceTree = "<group>"; };
+		D05E93B11CC199D0005B65E9 /* FavoritesBreweryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesBreweryViewController.m; sourceTree = "<group>"; };
+		D05E93B81CC2056B005B65E9 /* BreweryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreweryView.h; sourceTree = "<group>"; };
+		D05E93B91CC2056B005B65E9 /* BreweryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreweryView.m; sourceTree = "<group>"; };
+		D05E93BB1CC207D6005B65E9 /* FavoriteBreweryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteBreweryCell.xib; sourceTree = "<group>"; };
+		D05E93BD1CC2FA14005B65E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D06D04A31C48AA5400F03C1C /* ForumsMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumsMain.h; sourceTree = "<group>"; };
+		D06D04A41C48AA5400F03C1C /* ForumsMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumsMain.m; sourceTree = "<group>"; };
+		D06D04A61C49BCC000F03C1C /* BreweryPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreweryPageView.h; sourceTree = "<group>"; };
+		D06D04A71C49BCC000F03C1C /* BreweryPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreweryPageView.m; sourceTree = "<group>"; };
+		D06D04AA1C49C79100F03C1C /* IMG_5443.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5443.JPG; sourceTree = "<group>"; };
+		D06D04B01C49C7C800F03C1C /* Mother-Earth-Sunny-Haze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mother-Earth-Sunny-Haze.png"; sourceTree = "<group>"; };
+		D06D04B21C49C7CC00F03C1C /* mother-earth-brewing-dark-cloud-dunkel-lager-beer-north-carolina-usa-10571889.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mother-earth-brewing-dark-cloud-dunkel-lager-beer-north-carolina-usa-10571889.jpg"; sourceTree = "<group>"; };
+		D06D04B41C4AD3B600F03C1C /* BeerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerView.h; sourceTree = "<group>"; };
+		D06D04B51C4AD3B600F03C1C /* BeerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerView.m; sourceTree = "<group>"; };
+		D06D04B81C4AD5E200F03C1C /* Icon-eto-thumbs-up.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Icon-eto-thumbs-up.tiff"; sourceTree = "<group>"; };
+		D06D04BA1C4AD5F600F03C1C /* mp-chat.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "mp-chat.tiff"; sourceTree = "<group>"; };
+		D06D04C01C4AE32C00F03C1C /* ThumbsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsUp.png; sourceTree = "<group>"; };
+		D06D04C11C4AE32C00F03C1C /* ChatBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatBubble.png; sourceTree = "<group>"; };
+		D06D04C41C4AE3AB00F03C1C /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
+		D06D04C61C4AEA8000F03C1C /* Peanut Butter Milk Stout1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Peanut Butter Milk Stout1.JPG"; sourceTree = "<group>"; };
+		D06D04CE1C4AFD2E00F03C1C /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		D06D04D01C4AFD4C00F03C1C /* EventCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCellClass.h; sourceTree = "<group>"; };
+		D06D04D11C4AFD4C00F03C1C /* EventCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCellClass.m; sourceTree = "<group>"; };
+		D06D04D31C4B004B00F03C1C /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		D06D04D41C4B004B00F03C1C /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		D06D04D61C4B04C900F03C1C /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		D06D04D71C4B04C900F03C1C /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		D06F07B11C47407600B53848 /* Beer Hopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer Hopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06F07B51C47407600B53848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D06F07B71C47407600B53848 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D06F07B81C47407600B53848 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D06F07C11C47407600B53848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D06F07C31C47407600B53848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D06F07C61C47407600B53848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D06F07C81C47407600B53848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06F07CD1C47407600B53848 /* Beer HopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beer HopperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06F07D11C47407600B53848 /* Beer_HopperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Beer_HopperTests.m; sourceTree = "<group>"; };
+		D06F07D31C47407600B53848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06F07D81C47407600B53848 /* Beer HopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beer HopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06F07DC1C47407600B53848 /* Beer_HopperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Beer_HopperUITests.m; sourceTree = "<group>"; };
+		D06F07DE1C47407600B53848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06F07EA1C47432100B53848 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		D06F07EB1C47432100B53848 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		D06F07EE1C4743C600B53848 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
+		D06F07F01C47694A00B53848 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		D06F07F11C47694A00B53848 /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		D06F07F31C47695F00B53848 /* HomeDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetail.h; sourceTree = "<group>"; };
+		D06F07F41C47695F00B53848 /* HomeDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetail.m; sourceTree = "<group>"; };
+		D06F07F81C47770400B53848 /* Beer Hopper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Beer Hopper-Bridging-Header.h"; sourceTree = "<group>"; };
+		D06F07FD1C47789800B53848 /* Favorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorites.h; sourceTree = "<group>"; };
+		D06F07FE1C47789800B53848 /* Favorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorites.m; sourceTree = "<group>"; };
+		D06F08001C4778BA00B53848 /* Routes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Routes.h; sourceTree = "<group>"; };
+		D06F08011C4778BA00B53848 /* Routes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Routes.m; sourceTree = "<group>"; };
+		D06F08031C4778DA00B53848 /* Forums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Forums.h; path = ../Forums.h; sourceTree = "<group>"; };
+		D06F08041C4778DA00B53848 /* Forums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Forums.m; path = ../Forums.m; sourceTree = "<group>"; };
+		D06F08061C4778ED00B53848 /* NewBrewery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewBrewery.h; path = ../NewBrewery.h; sourceTree = "<group>"; };
+		D06F08071C4778ED00B53848 /* NewBrewery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewBrewery.m; path = ../NewBrewery.m; sourceTree = "<group>"; };
+		D06F081F1C480A2E00B53848 /* New.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = New.png; sourceTree = "<group>"; };
+		D06F08201C480A2E00B53848 /* Forums.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Forums.png; sourceTree = "<group>"; };
+		D06F08211C480A2E00B53848 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		D06F08221C480A2E00B53848 /* Routes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Routes.png; sourceTree = "<group>"; };
+		D06F08231C480A2E00B53848 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		D06F08291C48144600B53848 /* Star (Filled).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star (Filled).png"; sourceTree = "<group>"; };
+		D06F082A1C48144600B53848 /* Routes (Filled).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Routes (Filled).png"; sourceTree = "<group>"; };
+		D06F082B1C48144600B53848 /* New (Filled).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New (Filled).png"; sourceTree = "<group>"; };
+		D06F082C1C48144600B53848 /* Home (Filled).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home (Filled).png"; sourceTree = "<group>"; };
+		D06F082D1C48144600B53848 /* Forums (Filled).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forums (Filled).png"; sourceTree = "<group>"; };
+		D06F08341C48155900B53848 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D06F08361C482A5300B53848 /* BreweryHomePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreweryHomePage.h; sourceTree = "<group>"; };
+		D06F08371C482A5300B53848 /* BreweryHomePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreweryHomePage.m; sourceTree = "<group>"; };
+		D06F083B1C4832E700B53848 /* Lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lines.png; sourceTree = "<group>"; };
+		D06F083D1C48396100B53848 /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile.png; sourceTree = "<group>"; };
+		D06F083F1C483D3400B53848 /* OpenInMaps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpenInMaps.png; sourceTree = "<group>"; };
+		D06F08401C483D3400B53848 /* CallBrewery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CallBrewery.png; sourceTree = "<group>"; };
+		D06F08411C483D3400B53848 /* BreweryMessageBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BreweryMessageBoard.png; sourceTree = "<group>"; };
+		D06F08481C483F7C00B53848 /* MotherEarthLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MotherEarthLogo.png; sourceTree = "<group>"; };
+		D06F084A1C4840DC00B53848 /* iron_fist_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iron_fist_logo.jpg; sourceTree = "<group>"; };
+		D06F084C1C4840E100B53848 /* iron-fist-brewing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iron-fist-brewing.png"; sourceTree = "<group>"; };
+		D06F084E1C48411B00B53848 /* d61f64_fadea0deb21e9062773dd32c6b1d97e5.png_srz_981_570_85_22_0.50_1.20_0.00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d61f64_fadea0deb21e9062773dd32c6b1d97e5.png_srz_981_570_85_22_0.50_1.20_0.00.png; sourceTree = "<group>"; };
+		D06F08511C484EE500B53848 /* BreweryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BreweryCell.xib; sourceTree = "<group>"; };
+		D06F08531C484FD800B53848 /* BreweryCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreweryCellClass.h; sourceTree = "<group>"; };
+		D06F08541C484FD800B53848 /* BreweryCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreweryCellClass.m; sourceTree = "<group>"; };
+		D06F08561C485F5F00B53848 /* Brewery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brewery.h; sourceTree = "<group>"; };
+		D06F08571C485F5F00B53848 /* Brewery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brewery.m; sourceTree = "<group>"; };
+		D06F08591C485F7900B53848 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		D06F085A1C485F7900B53848 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
+		D06F085C1C4867CE00B53848 /* iconiTunesArtWork-512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconiTunesArtWork-512@2x.png"; sourceTree = "<group>"; };
+		D06F085D1C4867CE00B53848 /* iconiTunesArtWork-512@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconiTunesArtWork-512@3x.png"; sourceTree = "<group>"; };
+		D06F085E1C4867CE00B53848 /* icon_iPad-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_iPad-29@2x.png"; sourceTree = "<group>"; };
+		D06F085F1C4867CE00B53848 /* icon_iPad-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_iPad-29@3x.png"; sourceTree = "<group>"; };
+		D06F08601C4867CE00B53848 /* icon_iPad-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_iPad-40@2x.png"; sourceTree = "<group>"; };
+		D06F08611C4867CE00B53848 /* icon_iPad-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_iPad-40@3x.png"; sourceTree = "<group>"; };
+		D06F08621C4867CE00B53848 /* icon_iPad-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_iPad-76@2x.png"; sourceTree = "<group>"; };
+		D06F08631C4867CE00B53848 /* icon_iPad-76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_iPad-76@3x.png"; sourceTree = "<group>"; };
+		D06F08641C4867CE00B53848 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
+		D06F08651C4867CE00B53848 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
+		D07267CB1C5EC8C7005F5282 /* BreweryDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreweryDetailsViewController.h; sourceTree = "<group>"; };
+		D07267CC1C5EC8C7005F5282 /* BreweryDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreweryDetailsViewController.m; sourceTree = "<group>"; };
+		D07267CE1C6020DF005F5282 /* SearchingForBrewery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchingForBrewery.png; sourceTree = "<group>"; };
+		D07267D01C605E06005F5282 /* Home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home2.png; sourceTree = "<group>"; };
+		D07267D21C605EF0005F5282 /* Home2Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home2Empty.png; sourceTree = "<group>"; };
+		D0924CBC1D0B44570016EDFB /* turntable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turntable.png; sourceTree = "<group>"; };
+		D0924CBE1D0B44A40016EDFB /* photo-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-camera.png"; sourceTree = "<group>"; };
+		D0924CC01D0FC2640016EDFB /* favorites-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorites-button.png"; sourceTree = "<group>"; };
+		D0924CC21D146F850016EDFB /* Add Comment_Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add Comment_Disabled.png"; sourceTree = "<group>"; };
+		D0924CC31D146F850016EDFB /* Submit_Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Submit_Disabled.png; sourceTree = "<group>"; };
+		D094CA4E1CF7A0FC002B771C /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		D094CA4F1CF7A0FC002B771C /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		D094CA521CF7E907002B771C /* ImageActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageActivityView.h; sourceTree = "<group>"; };
+		D094CA531CF7E907002B771C /* ImageActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageActivityView.m; sourceTree = "<group>"; };
+		D094CA551CF8B181002B771C /* ChatBubble2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatBubble2.png; sourceTree = "<group>"; };
+		D094CA571CF8B2B6002B771C /* ThumbsDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbsDown.png; sourceTree = "<group>"; };
+		D0A0B1FA1D299BE300415E3A /* Beer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beer2.png; sourceTree = "<group>"; };
+		D0A0B1FC1D2C506800415E3A /* MyAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnalytics.h; sourceTree = "<group>"; };
+		D0A0B1FD1D2C506800415E3A /* MyAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnalytics.m; sourceTree = "<group>"; };
+		D0B4999A1C4B496200E66F7A /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutesViewController.h; sourceTree = "<group>"; };
+		D0B4999B1C4B496200E66F7A /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutesViewController.m; sourceTree = "<group>"; };
+		D0B4999D1C4B497600E66F7A /* RouteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteObject.h; sourceTree = "<group>"; };
+		D0B4999E1C4B497600E66F7A /* RouteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteObject.m; sourceTree = "<group>"; };
+		D0B499A01C4B499F00E66F7A /* RouteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteCell.h; sourceTree = "<group>"; };
+		D0B499A11C4B499F00E66F7A /* RouteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteCell.m; sourceTree = "<group>"; };
+		D0B499A21C4B499F00E66F7A /* RouteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteCell.xib; sourceTree = "<group>"; };
+		D0B499A51C4B74E900E66F7A /* booze-brothers-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "booze-brothers-logo.png"; sourceTree = "<group>"; };
+		D0B499A71C4B74F000E66F7A /* 1536496_425636430945880_4526480723997387063_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1536496_425636430945880_4526480723997387063_n.jpg; sourceTree = "<group>"; };
+		D0B499A91C4B7BD400E66F7A /* Belching-Beaver-Brewery-Small-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Belching-Beaver-Brewery-Small-5.jpg"; sourceTree = "<group>"; };
+		D0B499AB1C4B7BD800E66F7A /* belching_beaver_brewery_t500x552.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = belching_beaver_brewery_t500x552.jpeg; sourceTree = "<group>"; };
+		D0C4460D1D050AFA00239E52 /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageButton.h; path = "../Brewery Hopper/Brewery Hopper/ImageButton.h"; sourceTree = "<group>"; };
+		D0C4460E1D050AFA00239E52 /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageButton.m; path = "../Brewery Hopper/Brewery Hopper/ImageButton.m"; sourceTree = "<group>"; };
+		D0C446101D05424D00239E52 /* BeerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailViewController.h; sourceTree = "<group>"; };
+		D0C446111D05424D00239E52 /* BeerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailViewController.m; sourceTree = "<group>"; };
+		D0C446141D06737500239E52 /* Happy_Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Happy_Face.png; sourceTree = "<group>"; };
+		D0C446151D06737500239E52 /* Maybe_Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maybe_Face.png; sourceTree = "<group>"; };
+		D0C446161D06737500239E52 /* Sad_Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sad_Face.png; sourceTree = "<group>"; };
+		D0C4461B1D06753C00239E52 /* Add Comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add Comment.png"; sourceTree = "<group>"; };
+		D0C4461C1D06753C00239E52 /* Submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Submit.png; sourceTree = "<group>"; };
+		D0C4461F1D075F8900239E52 /* TextInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputView.h; sourceTree = "<group>"; };
+		D0C446201D075F8900239E52 /* TextInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputView.m; sourceTree = "<group>"; };
+		D0C446221D0794D900239E52 /* RatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingView.h; sourceTree = "<group>"; };
+		D0C446231D0794D900239E52 /* RatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingView.m; sourceTree = "<group>"; };
+		D0C446251D0798B800239E52 /* RatingsMasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingsMasterView.h; sourceTree = "<group>"; };
+		D0C446261D0798B800239E52 /* RatingsMasterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingsMasterView.m; sourceTree = "<group>"; };
+		D0EABB0F1D1E2429005E6C51 /* LikedBeersNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikedBeersNavigationViewController.h; sourceTree = "<group>"; };
+		D0EABB101D1E2429005E6C51 /* LikedBeersNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikedBeersNavigationViewController.m; sourceTree = "<group>"; };
+		D0EABB121D1E243A005E6C51 /* LikedBeersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikedBeersViewController.h; sourceTree = "<group>"; };
+		D0EABB131D1E243A005E6C51 /* LikedBeersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikedBeersViewController.m; sourceTree = "<group>"; };
+		D0EABB161D219168005E6C51 /* AppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
+		D0EABB171D219168005E6C51 /* AppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
+		D0EABB191D219970005E6C51 /* NothingFoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NothingFoundView.h; sourceTree = "<group>"; };
+		D0EABB1A1D219970005E6C51 /* NothingFoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NothingFoundView.m; sourceTree = "<group>"; };
+		D0EABB1C1D2638D6005E6C51 /* Info3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info3.png; sourceTree = "<group>"; };
+		D0F27D371CF3BE8B0065AF07 /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Black.otf"; path = "Beer Hopper/SF-UI-Display-Black.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D381CF3BE8B0065AF07 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Bold.otf"; path = "Beer Hopper/SF-UI-Display-Bold.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D391CF3BE8B0065AF07 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Heavy.otf"; path = "Beer Hopper/SF-UI-Display-Heavy.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D3A1CF3BE8B0065AF07 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Light.otf"; path = "Beer Hopper/SF-UI-Display-Light.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D3B1CF3BE8B0065AF07 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Medium.otf"; path = "Beer Hopper/SF-UI-Display-Medium.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D3C1CF3BE8B0065AF07 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Regular.otf"; path = "Beer Hopper/SF-UI-Display-Regular.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D3D1CF3BE8B0065AF07 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Semibold.otf"; path = "Beer Hopper/SF-UI-Display-Semibold.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D3E1CF3BE8B0065AF07 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Thin.otf"; path = "Beer Hopper/SF-UI-Display-Thin.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D3F1CF3BE8B0065AF07 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Ultralight.otf"; path = "Beer Hopper/SF-UI-Display-Ultralight.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D401CF3BE8B0065AF07 /* SF-UI-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Bold.otf"; path = "Beer Hopper/SF-UI-Text-Bold.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D411CF3BE8B0065AF07 /* SF-UI-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-BoldItalic.otf"; path = "Beer Hopper/SF-UI-Text-BoldItalic.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D421CF3BE8B0065AF07 /* SF-UI-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Heavy.otf"; path = "Beer Hopper/SF-UI-Text-Heavy.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D431CF3BE8B0065AF07 /* SF-UI-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-HeavyItalic.otf"; path = "Beer Hopper/SF-UI-Text-HeavyItalic.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D441CF3BE8B0065AF07 /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Light.otf"; path = "Beer Hopper/SF-UI-Text-Light.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D451CF3BE8B0065AF07 /* SF-UI-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-LightItalic.otf"; path = "Beer Hopper/SF-UI-Text-LightItalic.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D461CF3BE8B0065AF07 /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Medium.otf"; path = "Beer Hopper/SF-UI-Text-Medium.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D471CF3BE8B0065AF07 /* SF-UI-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-MediumItalic.otf"; path = "Beer Hopper/SF-UI-Text-MediumItalic.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D481CF3BE8B0065AF07 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "Beer Hopper/SF-UI-Text-Regular.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D491CF3BE8B0065AF07 /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-RegularItalic.otf"; path = "Beer Hopper/SF-UI-Text-RegularItalic.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D4A1CF3BE8B0065AF07 /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.otf"; path = "Beer Hopper/SF-UI-Text-Semibold.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D4B1CF3BE8B0065AF07 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-SemiboldItalic.otf"; path = "Beer Hopper/SF-UI-Text-SemiboldItalic.otf"; sourceTree = SOURCE_ROOT; };
+		D0F27D8B1CF500B60065AF07 /* BeerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeerView.xib; sourceTree = "<group>"; };
+		D0F27D8D1CF5059C0065AF07 /* BeerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerTableViewCell.h; sourceTree = "<group>"; };
+		D0F27D8E1CF5059C0065AF07 /* BeerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerTableViewCell.m; sourceTree = "<group>"; };
+		D0F27D911CF508E40065AF07 /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D06F07AE1C47407600B53848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06F08351C48155900B53848 /* MapKit.framework in Frameworks */,
+				BC36EFD3BFA0995525A66758 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06F07CA1C47407600B53848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06F07D51C47407600B53848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F21415E59D79ECE01ECDC01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84FCEF97379245BF2F5B591B /* Pods.debug.xcconfig */,
+				8FBE0090D01219A6D6DDFEBB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD244239EB9B31B9BA1DA724 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D01CB4101D1CA3CF0093B7FB /* Security.framework */,
+				932800C1A560C90AEFD670E8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D012C6361C8BF0940094F8AB /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				D012C6371C8BF10B0094F8AB /* LoginView.h */,
+				D012C6381C8BF10B0094F8AB /* LoginView.m */,
+				D012C63A1C8BF1290094F8AB /* CronyCount.h */,
+				D012C63B1C8BF1290094F8AB /* CronyCount.m */,
+				D012C63D1C8BF1380094F8AB /* Error.h */,
+				D012C63E1C8BF1380094F8AB /* Error.m */,
+			);
+			name = Authenticate;
+			sourceTree = "<group>";
+		};
+		D01CB3FD1D19EC8C0093B7FB /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D02F7C611D303D7C00EFFBAE /* Alert.h */,
+				D02F7C621D303D7C00EFFBAE /* Alert.m */,
+				D04D6A5C1C514DE200FB19E5 /* HopperData.h */,
+				D04D6A5D1C514DE200FB19E5 /* HopperData.m */,
+				D06F07EA1C47432100B53848 /* MainNavigationController.h */,
+				D06F07EB1C47432100B53848 /* MainNavigationController.m */,
+				D06F08061C4778ED00B53848 /* NewBrewery.h */,
+				D06F08071C4778ED00B53848 /* NewBrewery.m */,
+				D017F8B31C94D5F100E66CE3 /* MiniDetailView.h */,
+				D017F8B41C94D5F100E66CE3 /* MiniDetailView.m */,
+				D05E939F1CBC4975005B65E9 /* CustomTableView.h */,
+				D05E93A01CBC4975005B65E9 /* CustomTableView.m */,
+				D094CA521CF7E907002B771C /* ImageActivityView.h */,
+				D094CA531CF7E907002B771C /* ImageActivityView.m */,
+				D003AF651CFE6E0B007A0471 /* NothingFoundTableViewCell.h */,
+				D003AF661CFE6E0B007A0471 /* NothingFoundTableViewCell.m */,
+				D003AF671CFE6E0B007A0471 /* NothingFoundTableViewCell.xib */,
+				D0C4461F1D075F8900239E52 /* TextInputView.h */,
+				D0C446201D075F8900239E52 /* TextInputView.m */,
+				D0C446221D0794D900239E52 /* RatingView.h */,
+				D0C446231D0794D900239E52 /* RatingView.m */,
+				D0C446251D0798B800239E52 /* RatingsMasterView.h */,
+				D0C446261D0798B800239E52 /* RatingsMasterView.m */,
+				D0C4460D1D050AFA00239E52 /* ImageButton.h */,
+				D0C4460E1D050AFA00239E52 /* ImageButton.m */,
+				D0EABB191D219970005E6C51 /* NothingFoundView.h */,
+				D0EABB1A1D219970005E6C51 /* NothingFoundView.m */,
+				D0A0B1FC1D2C506800415E3A /* MyAnalytics.h */,
+				D0A0B1FD1D2C506800415E3A /* MyAnalytics.m */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		D01CB4021D1BACD40093B7FB /* Tutorial Pages */ = {
+			isa = PBXGroup;
+			children = (
+				D01CB4061D1BB2690093B7FB /* MainTutorial.h */,
+				D01CB4071D1BB2690093B7FB /* MainTutorial.m */,
+				D01CB4031D1BACEC0093B7FB /* SingleTutorialPage.h */,
+				D01CB4041D1BACEC0093B7FB /* SingleTutorialPage.m */,
+				D01CB4091D1BB4AD0093B7FB /* TutorialViewController.h */,
+				D01CB40A1D1BB4AD0093B7FB /* TutorialViewController.m */,
+			);
+			name = "Tutorial Pages";
+			sourceTree = "<group>";
+		};
+		D04D6A331C4C601B00FB19E5 /* Forums */ = {
+			isa = PBXGroup;
+			children = (
+				D012C6361C8BF0940094F8AB /* Authenticate */,
+				D06D04A31C48AA5400F03C1C /* ForumsMain.h */,
+				D06D04A41C48AA5400F03C1C /* ForumsMain.m */,
+				D06F08031C4778DA00B53848 /* Forums.h */,
+				D06F08041C4778DA00B53848 /* Forums.m */,
+				D04D6A381C4C608A00FB19E5 /* ForumsCellClass.h */,
+				D04D6A391C4C608A00FB19E5 /* ForumsCellClass.m */,
+				D04D6A3A1C4C608A00FB19E5 /* ForumsCellClass.xib */,
+				D04D6A3D1C4C62AC00FB19E5 /* ForumObject.h */,
+				D04D6A3E1C4C62AC00FB19E5 /* ForumObject.m */,
+				D012C6401C8C03F00094F8AB /* ForumDetailViewController.h */,
+				D012C6411C8C03F00094F8AB /* ForumDetailViewController.m */,
+				D012C6431C8C0C890094F8AB /* CommentView.h */,
+				D012C6441C8C0C890094F8AB /* CommentView.m */,
+			);
+			name = Forums;
+			sourceTree = "<group>";
+		};
+		D04D6A401C4DA37200FB19E5 /* Mother Earth Beers */ = {
+			isa = PBXGroup;
+			children = (
+				D04D6A411C4DA37B00FB19E5 /* weepingwollow-trim.png */,
+				D04D6A431C4DA3EA00FB19E5 /* sisters-trim.png */,
+				D04D6A451C4DA46400FB19E5 /* endlessriver-trim.png */,
+				D04D6A471C4DA4A300FB19E5 /* darkcloud-trim.png */,
+				D04D6A491C4DA53F00FB19E5 /* parkday-trim.png */,
+				D04D6A4B1C4DA57500FB19E5 /* porch-trim.png */,
+				D04D6A4D1C4DA5A100FB19E5 /* neighborhood-trim.png */,
+				D04D6A4F1C4DA5C400FB19E5 /* SnowFlurry_GlassAndBottle_cropped.png */,
+				D04D6A511C4DA60200FB19E5 /* tripel-trim.png */,
+				D04D6A531C4DA63400FB19E5 /* silent-night-trim.png */,
+				D04D6A551C4DA65800FB19E5 /* homegrown-trim.png */,
+				D04D6A571C4DA68B00FB19E5 /* windowpane-blackberries-trim.png */,
+			);
+			name = "Mother Earth Beers";
+			sourceTree = "<group>";
+		};
+		D04D6A5A1C4DAA9A00FB19E5 /* Iron Fist Beers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Iron Fist Beers";
+			sourceTree = "<group>";
+		};
+		D04D6A5B1C4DAAAB00FB19E5 /* Brewery Logos */ = {
+			isa = PBXGroup;
+			children = (
+				D06F08481C483F7C00B53848 /* MotherEarthLogo.png */,
+				D06F084A1C4840DC00B53848 /* iron_fist_logo.jpg */,
+				D06F084C1C4840E100B53848 /* iron-fist-brewing.png */,
+				D06F084E1C48411B00B53848 /* d61f64_fadea0deb21e9062773dd32c6b1d97e5.png_srz_981_570_85_22_0.50_1.20_0.00.png */,
+				D0B499A51C4B74E900E66F7A /* booze-brothers-logo.png */,
+				D0B499A71C4B74F000E66F7A /* 1536496_425636430945880_4526480723997387063_n.jpg */,
+				D0B499A91C4B7BD400E66F7A /* Belching-Beaver-Brewery-Small-5.jpg */,
+				D0B499AB1C4B7BD800E66F7A /* belching_beaver_brewery_t500x552.jpeg */,
+			);
+			name = "Brewery Logos";
+			sourceTree = "<group>";
+		};
+		D05E93AC1CC19954005B65E9 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				D05E93B01CC199D0005B65E9 /* FavoritesBreweryViewController.h */,
+				D05E93B11CC199D0005B65E9 /* FavoritesBreweryViewController.m */,
+				D05E93B81CC2056B005B65E9 /* BreweryView.h */,
+				D05E93B91CC2056B005B65E9 /* BreweryView.m */,
+				D05E93BB1CC207D6005B65E9 /* FavoriteBreweryCell.xib */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		D06D04A91C49C73500F03C1C /* Test Beer Images */ = {
+			isa = PBXGroup;
+			children = (
+				D06D04AA1C49C79100F03C1C /* IMG_5443.JPG */,
+				D06D04B01C49C7C800F03C1C /* Mother-Earth-Sunny-Haze.png */,
+				D06D04B21C49C7CC00F03C1C /* mother-earth-brewing-dark-cloud-dunkel-lager-beer-north-carolina-usa-10571889.jpg */,
+				D06D04C61C4AEA8000F03C1C /* Peanut Butter Milk Stout1.JPG */,
+			);
+			name = "Test Beer Images";
+			sourceTree = "<group>";
+		};
+		D06D04B71C4AD5C800F03C1C /* BeerView Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D06D04BA1C4AD5F600F03C1C /* mp-chat.tiff */,
+				D06D04B81C4AD5E200F03C1C /* Icon-eto-thumbs-up.tiff */,
+				D094CA571CF8B2B6002B771C /* ThumbsDown.png */,
+				D06D04C01C4AE32C00F03C1C /* ThumbsUp.png */,
+				D06D04C11C4AE32C00F03C1C /* ChatBubble.png */,
+				D094CA551CF8B181002B771C /* ChatBubble2.png */,
+				D06D04C41C4AE3AB00F03C1C /* Info.png */,
+			);
+			name = "BeerView Icons";
+			sourceTree = "<group>";
+		};
+		D06D04C81C4AFA7200F03C1C /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				D06F07FD1C47789800B53848 /* Favorites.h */,
+				D06F07FE1C47789800B53848 /* Favorites.m */,
+				D06D04CE1C4AFD2E00F03C1C /* EventCell.xib */,
+				D06D04D01C4AFD4C00F03C1C /* EventCellClass.h */,
+				D06D04D11C4AFD4C00F03C1C /* EventCellClass.m */,
+				D04D6A691C52052600FB19E5 /* EventDetailViewController.h */,
+				D04D6A6A1C52052600FB19E5 /* EventDetailViewController.m */,
+				D06D04D31C4B004B00F03C1C /* Event.h */,
+				D06D04D41C4B004B00F03C1C /* Event.m */,
+				D06D04D61C4B04C900F03C1C /* EventsViewController.h */,
+				D06D04D71C4B04C900F03C1C /* EventsViewController.m */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		D06F07A81C47407600B53848 = {
+			isa = PBXGroup;
+			children = (
+				D06F08341C48155900B53848 /* MapKit.framework */,
+				D06F07B31C47407600B53848 /* Beer Hopper */,
+				D06F07D01C47407600B53848 /* Beer HopperTests */,
+				D06F07DB1C47407600B53848 /* Beer HopperUITests */,
+				D06F07B21C47407600B53848 /* Products */,
+				D05E93BD1CC2FA14005B65E9 /* GoogleService-Info.plist */,
+				D06F07F81C47770400B53848 /* Beer Hopper-Bridging-Header.h */,
+				2F21415E59D79ECE01ECDC01 /* Pods */,
+				CD244239EB9B31B9BA1DA724 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D06F07B21C47407600B53848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D06F07B11C47407600B53848 /* Beer Hopper.app */,
+				D06F07CD1C47407600B53848 /* Beer HopperTests.xctest */,
+				D06F07D81C47407600B53848 /* Beer HopperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D06F07B31C47407600B53848 /* Beer Hopper */ = {
+			isa = PBXGroup;
+			children = (
+				D0EABB151D219156005E6C51 /* Info Views */,
+				D01CB4021D1BACD40093B7FB /* Tutorial Pages */,
+				D01CB3FD1D19EC8C0093B7FB /* Helper Classes */,
+				D06F07ED1C4743A700B53848 /* Images */,
+				D06F07B71C47407600B53848 /* AppDelegate.h */,
+				D06F07B81C47407600B53848 /* AppDelegate.m */,
+				D06F07C01C47407600B53848 /* Main.storyboard */,
+				D06F07C31C47407600B53848 /* Assets.xcassets */,
+				D06F07C51C47407600B53848 /* LaunchScreen.storyboard */,
+				D06F07C81C47407600B53848 /* Info.plist */,
+				D05E93AC1CC19954005B65E9 /* Favorites */,
+				D06F07B41C47407600B53848 /* Supporting Files */,
+				D06F08501C484ECA00B53848 /* Home Page */,
+				D06D04C81C4AFA7200F03C1C /* Events */,
+				D0B499991C4B494D00E66F7A /* Routes */,
+				D04D6A331C4C601B00FB19E5 /* Forums */,
+				D01CB40C1D1BB5B30093B7FB /* Constants.h */,
+				D01CB40D1D1BB5B30093B7FB /* Constants.m */,
+				D0EABB0E1D1E23F3005E6C51 /* Beers */,
+			);
+			path = "Beer Hopper";
+			sourceTree = "<group>";
+		};
+		D06F07B41C47407600B53848 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0F27D371CF3BE8B0065AF07 /* SF-UI-Display-Black.otf */,
+				D0F27D381CF3BE8B0065AF07 /* SF-UI-Display-Bold.otf */,
+				D0F27D391CF3BE8B0065AF07 /* SF-UI-Display-Heavy.otf */,
+				D0F27D3A1CF3BE8B0065AF07 /* SF-UI-Display-Light.otf */,
+				D0F27D3B1CF3BE8B0065AF07 /* SF-UI-Display-Medium.otf */,
+				D0F27D3C1CF3BE8B0065AF07 /* SF-UI-Display-Regular.otf */,
+				D0F27D3D1CF3BE8B0065AF07 /* SF-UI-Display-Semibold.otf */,
+				D0F27D3E1CF3BE8B0065AF07 /* SF-UI-Display-Thin.otf */,
+				D0F27D3F1CF3BE8B0065AF07 /* SF-UI-Display-Ultralight.otf */,
+				D0F27D401CF3BE8B0065AF07 /* SF-UI-Text-Bold.otf */,
+				D0F27D411CF3BE8B0065AF07 /* SF-UI-Text-BoldItalic.otf */,
+				D0F27D421CF3BE8B0065AF07 /* SF-UI-Text-Heavy.otf */,
+				D0F27D431CF3BE8B0065AF07 /* SF-UI-Text-HeavyItalic.otf */,
+				D0F27D441CF3BE8B0065AF07 /* SF-UI-Text-Light.otf */,
+				D0F27D451CF3BE8B0065AF07 /* SF-UI-Text-LightItalic.otf */,
+				D0F27D461CF3BE8B0065AF07 /* SF-UI-Text-Medium.otf */,
+				D0F27D471CF3BE8B0065AF07 /* SF-UI-Text-MediumItalic.otf */,
+				D0F27D481CF3BE8B0065AF07 /* SF-UI-Text-Regular.otf */,
+				D0F27D491CF3BE8B0065AF07 /* SF-UI-Text-RegularItalic.otf */,
+				D0F27D4A1CF3BE8B0065AF07 /* SF-UI-Text-Semibold.otf */,
+				D0F27D4B1CF3BE8B0065AF07 /* SF-UI-Text-SemiboldItalic.otf */,
+				D06F07B51C47407600B53848 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D06F07D01C47407600B53848 /* Beer HopperTests */ = {
+			isa = PBXGroup;
+			children = (
+				D06F07D11C47407600B53848 /* Beer_HopperTests.m */,
+				D06F07D31C47407600B53848 /* Info.plist */,
+			);
+			path = "Beer HopperTests";
+			sourceTree = "<group>";
+		};
+		D06F07DB1C47407600B53848 /* Beer HopperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D06F07DC1C47407600B53848 /* Beer_HopperUITests.m */,
+				D06F07DE1C47407600B53848 /* Info.plist */,
+			);
+			path = "Beer HopperUITests";
+			sourceTree = "<group>";
+		};
+		D06F07ED1C4743A700B53848 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D02F7C641D30529E00EFFBAE /* NoPostsFound.png */,
+				D02F7C5F1D303B0300EFFBAE /* NoEventsFound.png */,
+				D02F7C5B1D30320100EFFBAE /* HowToLikeBeers.png */,
+				D02F7C5D1D30385600EFFBAE /* HowToLikeBrewery.png */,
+				D01CB4191D1CD9530093B7FB /* Maybe_Face_Disabled.png */,
+				D01CB41A1D1CD9540093B7FB /* Happy_Face_Disabled.png */,
+				D01CB41B1D1CD9540093B7FB /* Sad_Face_Disabled.png */,
+				D01CB4151D1CB5240093B7FB /* arrow.png */,
+				D0C446131D06735C00239E52 /* Faces */,
+				D0C4461A1D06752700239E52 /* Button Images */,
+				D094CA4E1CF7A0FC002B771C /* calendar.png */,
+				D094CA4F1CF7A0FC002B771C /* clock.png */,
+				D01CCCA81CF568CA0033BD9D /* gift.png */,
+				D0F27D901CF508D30065AF07 /* BeerViewImages */,
+				D05E93A81CBEE183005B65E9 /* Mizo Broadway.ttf */,
+				D06F08701C4867D400B53848 /* Icons */,
+				D06F07EE1C4743C600B53848 /* Orange.png */,
+				D06F08471C483F3500B53848 /* Brewery Home Page Items */,
+				D06F08461C483F2700B53848 /* Navigation Bar Items */,
+				D06F08451C483F1E00B53848 /* Brewery Test Image */,
+				D06F08331C4814C800B53848 /* Task Bar Items */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D06F08331C4814C800B53848 /* Task Bar Items */ = {
+			isa = PBXGroup;
+			children = (
+				D06F081F1C480A2E00B53848 /* New.png */,
+				D06F08201C480A2E00B53848 /* Forums.png */,
+				D06F08211C480A2E00B53848 /* Star.png */,
+				D06F08221C480A2E00B53848 /* Routes.png */,
+				D06F08231C480A2E00B53848 /* Home.png */,
+				D07267D01C605E06005F5282 /* Home2.png */,
+				D07267D21C605EF0005F5282 /* Home2Empty.png */,
+				D06F08291C48144600B53848 /* Star (Filled).png */,
+				D06F082A1C48144600B53848 /* Routes (Filled).png */,
+				D06F082B1C48144600B53848 /* New (Filled).png */,
+				D06F082C1C48144600B53848 /* Home (Filled).png */,
+				D06F082D1C48144600B53848 /* Forums (Filled).png */,
+			);
+			name = "Task Bar Items";
+			sourceTree = "<group>";
+		};
+		D06F08451C483F1E00B53848 /* Brewery Test Image */ = {
+			isa = PBXGroup;
+			children = (
+				D04D6A5A1C4DAA9A00FB19E5 /* Iron Fist Beers */,
+				D04D6A401C4DA37200FB19E5 /* Mother Earth Beers */,
+				D06D04A91C49C73500F03C1C /* Test Beer Images */,
+				D04D6A5B1C4DAAAB00FB19E5 /* Brewery Logos */,
+			);
+			name = "Brewery Test Image";
+			sourceTree = "<group>";
+		};
+		D06F08461C483F2700B53848 /* Navigation Bar Items */ = {
+			isa = PBXGroup;
+			children = (
+				D05E93A61CBE03D7005B65E9 /* Beer_Hopper_Banner.png */,
+				D05E93A41CBE03C6005B65E9 /* BeerHopperLogo.png */,
+				D07267CE1C6020DF005F5282 /* SearchingForBrewery.png */,
+				D06F083D1C48396100B53848 /* Profile.png */,
+				D06F083B1C4832E700B53848 /* Lines.png */,
+			);
+			name = "Navigation Bar Items";
+			sourceTree = "<group>";
+		};
+		D06F08471C483F3500B53848 /* Brewery Home Page Items */ = {
+			isa = PBXGroup;
+			children = (
+				D0924CBC1D0B44570016EDFB /* turntable.png */,
+				D05E93AA1CC1971E005B65E9 /* BeerGlassImage.png */,
+				D0924CBE1D0B44A40016EDFB /* photo-camera.png */,
+				D06D04B71C4AD5C800F03C1C /* BeerView Icons */,
+				D06F083F1C483D3400B53848 /* OpenInMaps.png */,
+				D06F08401C483D3400B53848 /* CallBrewery.png */,
+				D06F08411C483D3400B53848 /* BreweryMessageBoard.png */,
+				D01CCCA21CF545E50033BD9D /* Phone2.png */,
+				D01CCCA31CF545E50033BD9D /* Speech2.png */,
+				D01CCCA41CF545E50033BD9D /* Map2.png */,
+			);
+			name = "Brewery Home Page Items";
+			sourceTree = "<group>";
+		};
+		D06F08501C484ECA00B53848 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				D06F08561C485F5F00B53848 /* Brewery.h */,
+				D06F08571C485F5F00B53848 /* Brewery.m */,
+				D06F08591C485F7900B53848 /* Beer.h */,
+				D06F085A1C485F7900B53848 /* Beer.m */,
+				D06F07F01C47694A00B53848 /* Home.h */,
+				D06F07F11C47694A00B53848 /* Home.m */,
+				D06F07F31C47695F00B53848 /* HomeDetail.h */,
+				D06F07F41C47695F00B53848 /* HomeDetail.m */,
+				D06F08361C482A5300B53848 /* BreweryHomePage.h */,
+				D06F08371C482A5300B53848 /* BreweryHomePage.m */,
+				D06F08511C484EE500B53848 /* BreweryCell.xib */,
+				D06F08531C484FD800B53848 /* BreweryCellClass.h */,
+				D06F08541C484FD800B53848 /* BreweryCellClass.m */,
+				D06D04A61C49BCC000F03C1C /* BreweryPageView.h */,
+				D06D04A71C49BCC000F03C1C /* BreweryPageView.m */,
+				D06D04B41C4AD3B600F03C1C /* BeerView.h */,
+				D06D04B51C4AD3B600F03C1C /* BeerView.m */,
+				D07267CB1C5EC8C7005F5282 /* BreweryDetailsViewController.h */,
+				D07267CC1C5EC8C7005F5282 /* BreweryDetailsViewController.m */,
+				D0F27D8B1CF500B60065AF07 /* BeerView.xib */,
+				D0F27D8D1CF5059C0065AF07 /* BeerTableViewCell.h */,
+				D0F27D8E1CF5059C0065AF07 /* BeerTableViewCell.m */,
+				D0C446101D05424D00239E52 /* BeerDetailViewController.h */,
+				D0C446111D05424D00239E52 /* BeerDetailViewController.m */,
+			);
+			name = "Home Page";
+			sourceTree = "<group>";
+		};
+		D06F08701C4867D400B53848 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D06F085C1C4867CE00B53848 /* iconiTunesArtWork-512@2x.png */,
+				D06F085D1C4867CE00B53848 /* iconiTunesArtWork-512@3x.png */,
+				D06F085E1C4867CE00B53848 /* icon_iPad-29@2x.png */,
+				D06F085F1C4867CE00B53848 /* icon_iPad-29@3x.png */,
+				D06F08601C4867CE00B53848 /* icon_iPad-40@2x.png */,
+				D06F08611C4867CE00B53848 /* icon_iPad-40@3x.png */,
+				D06F08621C4867CE00B53848 /* icon_iPad-76@2x.png */,
+				D06F08631C4867CE00B53848 /* icon_iPad-76@3x.png */,
+				D06F08641C4867CE00B53848 /* icon-60@2x.png */,
+				D06F08651C4867CE00B53848 /* icon-60@3x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		D0B499991C4B494D00E66F7A /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				D06F08001C4778BA00B53848 /* Routes.h */,
+				D06F08011C4778BA00B53848 /* Routes.m */,
+				D0B4999A1C4B496200E66F7A /* RoutesViewController.h */,
+				D0B4999B1C4B496200E66F7A /* RoutesViewController.m */,
+				D0B4999D1C4B497600E66F7A /* RouteObject.h */,
+				D0B4999E1C4B497600E66F7A /* RouteObject.m */,
+				D0B499A01C4B499F00E66F7A /* RouteCell.h */,
+				D0B499A11C4B499F00E66F7A /* RouteCell.m */,
+				D0B499A21C4B499F00E66F7A /* RouteCell.xib */,
+			);
+			name = Routes;
+			sourceTree = "<group>";
+		};
+		D0C446131D06735C00239E52 /* Faces */ = {
+			isa = PBXGroup;
+			children = (
+				D0C446141D06737500239E52 /* Happy_Face.png */,
+				D0C446151D06737500239E52 /* Maybe_Face.png */,
+				D0C446161D06737500239E52 /* Sad_Face.png */,
+			);
+			name = Faces;
+			sourceTree = "<group>";
+		};
+		D0C4461A1D06752700239E52 /* Button Images */ = {
+			isa = PBXGroup;
+			children = (
+				D01CB4171D1CB8000093B7FB /* Info2.png */,
+				D0EABB1C1D2638D6005E6C51 /* Info3.png */,
+				D0924CC01D0FC2640016EDFB /* favorites-button.png */,
+				D0C4461B1D06753C00239E52 /* Add Comment.png */,
+				D0C4461C1D06753C00239E52 /* Submit.png */,
+				D0924CC21D146F850016EDFB /* Add Comment_Disabled.png */,
+				D0924CC31D146F850016EDFB /* Submit_Disabled.png */,
+				D01CB3FE1D1A09260093B7FB /* Submit_WithBorder.png */,
+				D01CB4001D1A0AE10093B7FB /* Submit_WithBorder_Disabled.png */,
+			);
+			name = "Button Images";
+			sourceTree = "<group>";
+		};
+		D0EABB0E1D1E23F3005E6C51 /* Beers */ = {
+			isa = PBXGroup;
+			children = (
+				D0EABB0F1D1E2429005E6C51 /* LikedBeersNavigationViewController.h */,
+				D0EABB101D1E2429005E6C51 /* LikedBeersNavigationViewController.m */,
+				D0EABB121D1E243A005E6C51 /* LikedBeersViewController.h */,
+				D0EABB131D1E243A005E6C51 /* LikedBeersViewController.m */,
+			);
+			name = Beers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D0EABB151D219156005E6C51 /* Info Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0EABB161D219168005E6C51 /* AppInfoViewController.h */,
+				D0EABB171D219168005E6C51 /* AppInfoViewController.m */,
+			);
+			name = "Info Views";
+			sourceTree = "<group>";
+		};
+		D0F27D901CF508D30065AF07 /* BeerViewImages */ = {
+			isa = PBXGroup;
+			children = (
+				D0F27D911CF508E40065AF07 /* beer.png */,
+				D0A0B1FA1D299BE300415E3A /* Beer2.png */,
+			);
+			name = BeerViewImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D06F07B01C47407600B53848 /* Beer Hopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06F07E11C47407600B53848 /* Build configuration list for PBXNativeTarget "Beer Hopper" */;
+			buildPhases = (
+				F9F25213F99232E11B41DB67 /* Check Pods Manifest.lock */,
+				D06F07AD1C47407600B53848 /* Sources */,
+				D06F07AE1C47407600B53848 /* Frameworks */,
+				D06F07AF1C47407600B53848 /* Resources */,
+				3345D3FD7D49CF623EABA0D1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Beer Hopper";
+			productName = "Beer Hopper";
+			productReference = D06F07B11C47407600B53848 /* Beer Hopper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D06F07CC1C47407600B53848 /* Beer HopperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06F07E41C47407600B53848 /* Build configuration list for PBXNativeTarget "Beer HopperTests" */;
+			buildPhases = (
+				D06F07C91C47407600B53848 /* Sources */,
+				D06F07CA1C47407600B53848 /* Frameworks */,
+				D06F07CB1C47407600B53848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D06F07CF1C47407600B53848 /* PBXTargetDependency */,
+			);
+			name = "Beer HopperTests";
+			productName = "Beer HopperTests";
+			productReference = D06F07CD1C47407600B53848 /* Beer HopperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D06F07D71C47407600B53848 /* Beer HopperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06F07E71C47407600B53848 /* Build configuration list for PBXNativeTarget "Beer HopperUITests" */;
+			buildPhases = (
+				D06F07D41C47407600B53848 /* Sources */,
+				D06F07D51C47407600B53848 /* Frameworks */,
+				D06F07D61C47407600B53848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D06F07DA1C47407600B53848 /* PBXTargetDependency */,
+			);
+			name = "Beer HopperUITests";
+			productName = "Beer HopperUITests";
+			productReference = D06F07D81C47407600B53848 /* Beer HopperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D06F07A91C47407600B53848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "The Crony Project";
+				TargetAttributes = {
+					D06F07B01C47407600B53848 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = HSA2LNH32G;
+					};
+					D06F07CC1C47407600B53848 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D06F07B01C47407600B53848;
+					};
+					D06F07D71C47407600B53848 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D06F07B01C47407600B53848;
+					};
+				};
+			};
+			buildConfigurationList = D06F07AC1C47407600B53848 /* Build configuration list for PBXProject "Beer Hopper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D06F07A81C47407600B53848;
+			productRefGroup = D06F07B21C47407600B53848 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D06F07B01C47407600B53848 /* Beer Hopper */,
+				D06F07CC1C47407600B53848 /* Beer HopperTests */,
+				D06F07D71C47407600B53848 /* Beer HopperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D06F07AF1C47407600B53848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06F086A1C4867CE00B53848 /* icon_iPad-40@2x.png in Resources */,
+				D06F08661C4867CE00B53848 /* iconiTunesArtWork-512@2x.png in Resources */,
+				D0F27D501CF3BE9D0065AF07 /* SF-UI-Display-Medium.otf in Resources */,
+				D0C446181D06737500239E52 /* Maybe_Face.png in Resources */,
+				D06F08271C480A2E00B53848 /* Routes.png in Resources */,
+				D0F27D531CF3BE9D0065AF07 /* SF-UI-Display-Thin.otf in Resources */,
+				D06F086C1C4867CE00B53848 /* icon_iPad-76@2x.png in Resources */,
+				D07267CF1C6020DF005F5282 /* SearchingForBrewery.png in Resources */,
+				D06F084B1C4840DC00B53848 /* iron_fist_logo.jpg in Resources */,
+				D0B499AA1C4B7BD400E66F7A /* Belching-Beaver-Brewery-Small-5.jpg in Resources */,
+				D06F082F1C48144600B53848 /* Routes (Filled).png in Resources */,
+				D0924CC11D0FC2640016EDFB /* favorites-button.png in Resources */,
+				D0F27D4D1CF3BE9D0065AF07 /* SF-UI-Display-Bold.otf in Resources */,
+				D06F08241C480A2E00B53848 /* New.png in Resources */,
+				D0F27D521CF3BE9D0065AF07 /* SF-UI-Display-Semibold.otf in Resources */,
+				D06F083C1C4832E700B53848 /* Lines.png in Resources */,
+				D06F08281C480A2E00B53848 /* Home.png in Resources */,
+				D04D6A4A1C4DA53F00FB19E5 /* parkday-trim.png in Resources */,
+				D06F086B1C4867CE00B53848 /* icon_iPad-40@3x.png in Resources */,
+				D0F27D5C1CF3BE9D0065AF07 /* SF-UI-Text-MediumItalic.otf in Resources */,
+				D0F27D4F1CF3BE9D0065AF07 /* SF-UI-Display-Light.otf in Resources */,
+				D0B499A81C4B74F000E66F7A /* 1536496_425636430945880_4526480723997387063_n.jpg in Resources */,
+				D0F27D5D1CF3BE9D0065AF07 /* SF-UI-Text-Regular.otf in Resources */,
+				D06F08521C484EE500B53848 /* BreweryCell.xib in Resources */,
+				D0F27D4E1CF3BE9D0065AF07 /* SF-UI-Display-Heavy.otf in Resources */,
+				D06F08251C480A2E00B53848 /* Forums.png in Resources */,
+				D0F27D601CF3BE9D0065AF07 /* SF-UI-Text-SemiboldItalic.otf in Resources */,
+				D0F27D5E1CF3BE9D0065AF07 /* SF-UI-Text-RegularItalic.otf in Resources */,
+				D0F27D511CF3BE9D0065AF07 /* SF-UI-Display-Regular.otf in Resources */,
+				D094CA561CF8B181002B771C /* ChatBubble2.png in Resources */,
+				D06D04B31C49C7CC00F03C1C /* mother-earth-brewing-dark-cloud-dunkel-lager-beer-north-carolina-usa-10571889.jpg in Resources */,
+				D0B499A61C4B74E900E66F7A /* booze-brothers-logo.png in Resources */,
+				D06D04AC1C49C79100F03C1C /* IMG_5443.JPG in Resources */,
+				D0F27D551CF3BE9D0065AF07 /* SF-UI-Text-Bold.otf in Resources */,
+				D0C4461E1D06753C00239E52 /* Submit.png in Resources */,
+				D0F27D921CF508E40065AF07 /* beer.png in Resources */,
+				D0924CBD1D0B44570016EDFB /* turntable.png in Resources */,
+				D0F27D571CF3BE9D0065AF07 /* SF-UI-Text-Heavy.otf in Resources */,
+				D01CCCA91CF568CA0033BD9D /* gift.png in Resources */,
+				D06F08431C483D3400B53848 /* CallBrewery.png in Resources */,
+				D0924CBF1D0B44A40016EDFB /* photo-camera.png in Resources */,
+				D05E93AB1CC1971E005B65E9 /* BeerGlassImage.png in Resources */,
+				D094CA511CF7A0FC002B771C /* clock.png in Resources */,
+				D01CB41C1D1CD9540093B7FB /* Maybe_Face_Disabled.png in Resources */,
+				D01CB3FF1D1A09260093B7FB /* Submit_WithBorder.png in Resources */,
+				D06D04C31C4AE32C00F03C1C /* ChatBubble.png in Resources */,
+				D0F27D581CF3BE9D0065AF07 /* SF-UI-Text-HeavyItalic.otf in Resources */,
+				D0F27D5B1CF3BE9D0065AF07 /* SF-UI-Text-Medium.otf in Resources */,
+				D06F07C71C47407600B53848 /* LaunchScreen.storyboard in Resources */,
+				D06F08681C4867CE00B53848 /* icon_iPad-29@2x.png in Resources */,
+				D06D04CF1C4AFD2E00F03C1C /* EventCell.xib in Resources */,
+				D05E93A71CBE03D7005B65E9 /* Beer_Hopper_Banner.png in Resources */,
+				D01CB4011D1A0AE10093B7FB /* Submit_WithBorder_Disabled.png in Resources */,
+				D01CB41E1D1CD9540093B7FB /* Sad_Face_Disabled.png in Resources */,
+				D0C4461D1D06753C00239E52 /* Add Comment.png in Resources */,
+				D06F086F1C4867CE00B53848 /* icon-60@3x.png in Resources */,
+				D04D6A421C4DA37B00FB19E5 /* weepingwollow-trim.png in Resources */,
+				D02F7C651D30529E00EFFBAE /* NoPostsFound.png in Resources */,
+				D02F7C5E1D30385600EFFBAE /* HowToLikeBrewery.png in Resources */,
+				D01CCCA51CF545E50033BD9D /* Phone2.png in Resources */,
+				D04D6A4C1C4DA57500FB19E5 /* porch-trim.png in Resources */,
+				D04D6A541C4DA63400FB19E5 /* silent-night-trim.png in Resources */,
+				D04D6A581C4DA68B00FB19E5 /* windowpane-blackberries-trim.png in Resources */,
+				D01CB4161D1CB5240093B7FB /* arrow.png in Resources */,
+				D06F07EF1C4743C600B53848 /* Orange.png in Resources */,
+				D05E93A51CBE03C6005B65E9 /* BeerHopperLogo.png in Resources */,
+				D0EABB1D1D2638D6005E6C51 /* Info3.png in Resources */,
+				D06D04BB1C4AD5F600F03C1C /* mp-chat.tiff in Resources */,
+				D06D04C21C4AE32C00F03C1C /* ThumbsUp.png in Resources */,
+				D01CCCA71CF545E50033BD9D /* Map2.png in Resources */,
+				D06F08441C483D3400B53848 /* BreweryMessageBoard.png in Resources */,
+				D0F27D8C1CF500B60065AF07 /* BeerView.xib in Resources */,
+				D02F7C5C1D30320100EFFBAE /* HowToLikeBeers.png in Resources */,
+				D06F08671C4867CE00B53848 /* iconiTunesArtWork-512@3x.png in Resources */,
+				D06F07C41C47407600B53848 /* Assets.xcassets in Resources */,
+				D01CB41D1D1CD9540093B7FB /* Happy_Face_Disabled.png in Resources */,
+				D003AF691CFE6E0B007A0471 /* NothingFoundTableViewCell.xib in Resources */,
+				D0F27D541CF3BE9D0065AF07 /* SF-UI-Display-Ultralight.otf in Resources */,
+				D06F08311C48144600B53848 /* Home (Filled).png in Resources */,
+				D06D04C51C4AE3AB00F03C1C /* Info.png in Resources */,
+				D06F08301C48144600B53848 /* New (Filled).png in Resources */,
+				D094CA581CF8B2B6002B771C /* ThumbsDown.png in Resources */,
+				D04D6A4E1C4DA5A100FB19E5 /* neighborhood-trim.png in Resources */,
+				D02F7C601D303B0300EFFBAE /* NoEventsFound.png in Resources */,
+				D06F08261C480A2E00B53848 /* Star.png in Resources */,
+				D06F083E1C48396100B53848 /* Profile.png in Resources */,
+				D0F27D5F1CF3BE9D0065AF07 /* SF-UI-Text-Semibold.otf in Resources */,
+				D06F084F1C48411B00B53848 /* d61f64_fadea0deb21e9062773dd32c6b1d97e5.png_srz_981_570_85_22_0.50_1.20_0.00.png in Resources */,
+				D06F08691C4867CE00B53848 /* icon_iPad-29@3x.png in Resources */,
+				D0924CC41D146F850016EDFB /* Add Comment_Disabled.png in Resources */,
+				D04D6A481C4DA4A300FB19E5 /* darkcloud-trim.png in Resources */,
+				D04D6A521C4DA60200FB19E5 /* tripel-trim.png in Resources */,
+				D0C446191D06737500239E52 /* Sad_Face.png in Resources */,
+				D05E93A91CBEE189005B65E9 /* Mizo Broadway.ttf in Resources */,
+				D04D6A441C4DA3EA00FB19E5 /* sisters-trim.png in Resources */,
+				D01CB4181D1CB8000093B7FB /* Info2.png in Resources */,
+				D06D04B91C4AD5E200F03C1C /* Icon-eto-thumbs-up.tiff in Resources */,
+				D04D6A501C4DA5C400FB19E5 /* SnowFlurry_GlassAndBottle_cropped.png in Resources */,
+				D01CCCA61CF545E50033BD9D /* Speech2.png in Resources */,
+				D0F27D591CF3BE9D0065AF07 /* SF-UI-Text-Light.otf in Resources */,
+				D094CA501CF7A0FC002B771C /* calendar.png in Resources */,
+				D0C446171D06737500239E52 /* Happy_Face.png in Resources */,
+				D04D6A561C4DA65800FB19E5 /* homegrown-trim.png in Resources */,
+				D0F27D4C1CF3BE9D0065AF07 /* SF-UI-Display-Black.otf in Resources */,
+				D07267D31C605EF0005F5282 /* Home2Empty.png in Resources */,
+				D0B499AC1C4B7BD800E66F7A /* belching_beaver_brewery_t500x552.jpeg in Resources */,
+				D06F082E1C48144600B53848 /* Star (Filled).png in Resources */,
+				D06F08491C483F7C00B53848 /* MotherEarthLogo.png in Resources */,
+				D06F086D1C4867CE00B53848 /* icon_iPad-76@3x.png in Resources */,
+				D0F27D561CF3BE9D0065AF07 /* SF-UI-Text-BoldItalic.otf in Resources */,
+				D0A0B1FB1D299BE300415E3A /* Beer2.png in Resources */,
+				D06D04C71C4AEA8000F03C1C /* Peanut Butter Milk Stout1.JPG in Resources */,
+				D06F086E1C4867CE00B53848 /* icon-60@2x.png in Resources */,
+				D0924CC51D146F850016EDFB /* Submit_Disabled.png in Resources */,
+				D06D04B11C49C7C800F03C1C /* Mother-Earth-Sunny-Haze.png in Resources */,
+				D04D6A3C1C4C608A00FB19E5 /* ForumsCellClass.xib in Resources */,
+				D06F07C21C47407600B53848 /* Main.storyboard in Resources */,
+				D06F08421C483D3400B53848 /* OpenInMaps.png in Resources */,
+				D05E93BE1CC2FA14005B65E9 /* GoogleService-Info.plist in Resources */,
+				D06F084D1C4840E100B53848 /* iron-fist-brewing.png in Resources */,
+				D0B499A41C4B499F00E66F7A /* RouteCell.xib in Resources */,
+				D04D6A461C4DA46400FB19E5 /* endlessriver-trim.png in Resources */,
+				D06F08321C48144600B53848 /* Forums (Filled).png in Resources */,
+				D07267D11C605E06005F5282 /* Home2.png in Resources */,
+				D0F27D5A1CF3BE9D0065AF07 /* SF-UI-Text-LightItalic.otf in Resources */,
+				D05E93BC1CC207D6005B65E9 /* FavoriteBreweryCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06F07CB1C47407600B53848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F27D701CF3C25E0065AF07 /* SF-UI-Text-Medium.otf in Resources */,
+				D0F27D6E1CF3C25E0065AF07 /* SF-UI-Text-Light.otf in Resources */,
+				D0F27D721CF3C25E0065AF07 /* SF-UI-Text-Regular.otf in Resources */,
+				D0F27D731CF3C25E0065AF07 /* SF-UI-Text-RegularItalic.otf in Resources */,
+				D0F27D741CF3C25E0065AF07 /* SF-UI-Text-Semibold.otf in Resources */,
+				D0F27D6A1CF3C25E0065AF07 /* SF-UI-Text-Bold.otf in Resources */,
+				D0F27D671CF3C25E0065AF07 /* SF-UI-Display-Semibold.otf in Resources */,
+				D0F27D691CF3C25E0065AF07 /* SF-UI-Display-Ultralight.otf in Resources */,
+				D0F27D6D1CF3C25E0065AF07 /* SF-UI-Text-HeavyItalic.otf in Resources */,
+				D0F27D6C1CF3C25E0065AF07 /* SF-UI-Text-Heavy.otf in Resources */,
+				D0F27D6B1CF3C25E0065AF07 /* SF-UI-Text-BoldItalic.otf in Resources */,
+				D0F27D6F1CF3C25E0065AF07 /* SF-UI-Text-LightItalic.otf in Resources */,
+				D0F27D751CF3C25E0065AF07 /* SF-UI-Text-SemiboldItalic.otf in Resources */,
+				D0F27D621CF3C25E0065AF07 /* SF-UI-Display-Bold.otf in Resources */,
+				D0F27D631CF3C25E0065AF07 /* SF-UI-Display-Heavy.otf in Resources */,
+				D0F27D661CF3C25E0065AF07 /* SF-UI-Display-Regular.otf in Resources */,
+				D0F27D681CF3C25E0065AF07 /* SF-UI-Display-Thin.otf in Resources */,
+				D0F27D711CF3C25E0065AF07 /* SF-UI-Text-MediumItalic.otf in Resources */,
+				D0F27D651CF3C25E0065AF07 /* SF-UI-Display-Medium.otf in Resources */,
+				D0F27D641CF3C25E0065AF07 /* SF-UI-Display-Light.otf in Resources */,
+				D0F27D611CF3C25E0065AF07 /* SF-UI-Display-Black.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06F07D61C47407600B53848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F27D851CF3C25E0065AF07 /* SF-UI-Text-Medium.otf in Resources */,
+				D0F27D831CF3C25E0065AF07 /* SF-UI-Text-Light.otf in Resources */,
+				D0F27D871CF3C25E0065AF07 /* SF-UI-Text-Regular.otf in Resources */,
+				D0F27D881CF3C25E0065AF07 /* SF-UI-Text-RegularItalic.otf in Resources */,
+				D0F27D891CF3C25E0065AF07 /* SF-UI-Text-Semibold.otf in Resources */,
+				D0F27D7F1CF3C25E0065AF07 /* SF-UI-Text-Bold.otf in Resources */,
+				D0F27D7C1CF3C25E0065AF07 /* SF-UI-Display-Semibold.otf in Resources */,
+				D0F27D7E1CF3C25E0065AF07 /* SF-UI-Display-Ultralight.otf in Resources */,
+				D0F27D821CF3C25E0065AF07 /* SF-UI-Text-HeavyItalic.otf in Resources */,
+				D0F27D811CF3C25E0065AF07 /* SF-UI-Text-Heavy.otf in Resources */,
+				D0F27D801CF3C25E0065AF07 /* SF-UI-Text-BoldItalic.otf in Resources */,
+				D0F27D841CF3C25E0065AF07 /* SF-UI-Text-LightItalic.otf in Resources */,
+				D0F27D8A1CF3C25E0065AF07 /* SF-UI-Text-SemiboldItalic.otf in Resources */,
+				D0F27D771CF3C25E0065AF07 /* SF-UI-Display-Bold.otf in Resources */,
+				D0F27D781CF3C25E0065AF07 /* SF-UI-Display-Heavy.otf in Resources */,
+				D0F27D7B1CF3C25E0065AF07 /* SF-UI-Display-Regular.otf in Resources */,
+				D0F27D7D1CF3C25E0065AF07 /* SF-UI-Display-Thin.otf in Resources */,
+				D0F27D861CF3C25E0065AF07 /* SF-UI-Text-MediumItalic.otf in Resources */,
+				D0F27D7A1CF3C25E0065AF07 /* SF-UI-Display-Medium.otf in Resources */,
+				D0F27D791CF3C25E0065AF07 /* SF-UI-Display-Light.otf in Resources */,
+				D0F27D761CF3C25E0065AF07 /* SF-UI-Display-Black.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3345D3FD7D49CF623EABA0D1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F25213F99232E11B41DB67 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D06F07AD1C47407600B53848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06F085B1C485F7900B53848 /* Beer.m in Sources */,
+				D04D6A5E1C514DE200FB19E5 /* HopperData.m in Sources */,
+				D012C6391C8BF10B0094F8AB /* LoginView.m in Sources */,
+				D06D04D81C4B04C900F03C1C /* EventsViewController.m in Sources */,
+				D06F08581C485F5F00B53848 /* Brewery.m in Sources */,
+				D06F07B91C47407600B53848 /* AppDelegate.m in Sources */,
+				D06F07FF1C47789800B53848 /* Favorites.m in Sources */,
+				D06F08551C484FD800B53848 /* BreweryCellClass.m in Sources */,
+				D06F07B61C47407600B53848 /* main.m in Sources */,
+				D0B4999F1C4B497600E66F7A /* RouteObject.m in Sources */,
+				D0EABB181D219168005E6C51 /* AppInfoViewController.m in Sources */,
+				D06D04D51C4B004B00F03C1C /* Event.m in Sources */,
+				D06D04A51C48AA5400F03C1C /* ForumsMain.m in Sources */,
+				D012C63F1C8BF1380094F8AB /* Error.m in Sources */,
+				D0C446121D05424D00239E52 /* BeerDetailViewController.m in Sources */,
+				D05E93B21CC199D0005B65E9 /* FavoritesBreweryViewController.m in Sources */,
+				D0A0B1FE1D2C506800415E3A /* MyAnalytics.m in Sources */,
+				D06F07F51C47695F00B53848 /* HomeDetail.m in Sources */,
+				D06F08021C4778BA00B53848 /* Routes.m in Sources */,
+				D06F07F21C47694A00B53848 /* Home.m in Sources */,
+				D06F08381C482A5300B53848 /* BreweryHomePage.m in Sources */,
+				D07267CD1C5EC8C7005F5282 /* BreweryDetailsViewController.m in Sources */,
+				D06F07EC1C47432100B53848 /* MainNavigationController.m in Sources */,
+				D01CB4051D1BACEC0093B7FB /* SingleTutorialPage.m in Sources */,
+				D012C6421C8C03F00094F8AB /* ForumDetailViewController.m in Sources */,
+				D0F27D8F1CF5059C0065AF07 /* BeerTableViewCell.m in Sources */,
+				D04D6A6B1C52052600FB19E5 /* EventDetailViewController.m in Sources */,
+				D0B4999C1C4B496200E66F7A /* RoutesViewController.m in Sources */,
+				D05E93A11CBC4975005B65E9 /* CustomTableView.m in Sources */,
+				D012C6451C8C0C890094F8AB /* CommentView.m in Sources */,
+				D05E93BA1CC2056B005B65E9 /* BreweryView.m in Sources */,
+				D04D6A3F1C4C62AC00FB19E5 /* ForumObject.m in Sources */,
+				D0C446271D0798B800239E52 /* RatingsMasterView.m in Sources */,
+				D06F08081C4778ED00B53848 /* NewBrewery.m in Sources */,
+				D003AF681CFE6E0B007A0471 /* NothingFoundTableViewCell.m in Sources */,
+				D0B499A31C4B499F00E66F7A /* RouteCell.m in Sources */,
+				D02F7C631D303D7C00EFFBAE /* Alert.m in Sources */,
+				D0C446241D0794D900239E52 /* RatingView.m in Sources */,
+				D01CB40E1D1BB5B30093B7FB /* Constants.m in Sources */,
+				D0C446211D075F8900239E52 /* TextInputView.m in Sources */,
+				D01CB4081D1BB2690093B7FB /* MainTutorial.m in Sources */,
+				D0C4460F1D050AFA00239E52 /* ImageButton.m in Sources */,
+				D04D6A3B1C4C608A00FB19E5 /* ForumsCellClass.m in Sources */,
+				D0EABB141D1E243A005E6C51 /* LikedBeersViewController.m in Sources */,
+				D06D04A81C49BCC000F03C1C /* BreweryPageView.m in Sources */,
+				D06D04D21C4AFD4C00F03C1C /* EventCellClass.m in Sources */,
+				D094CA541CF7E907002B771C /* ImageActivityView.m in Sources */,
+				D017F8B51C94D5F100E66CE3 /* MiniDetailView.m in Sources */,
+				D06D04B61C4AD3B600F03C1C /* BeerView.m in Sources */,
+				D0EABB111D1E2429005E6C51 /* LikedBeersNavigationViewController.m in Sources */,
+				D012C63C1C8BF1290094F8AB /* CronyCount.m in Sources */,
+				D01CB40B1D1BB4AD0093B7FB /* TutorialViewController.m in Sources */,
+				D06F08051C4778DA00B53848 /* Forums.m in Sources */,
+				D0EABB1B1D219970005E6C51 /* NothingFoundView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06F07C91C47407600B53848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06F07D21C47407600B53848 /* Beer_HopperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06F07D41C47407600B53848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06F07DD1C47407600B53848 /* Beer_HopperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D06F07CF1C47407600B53848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D06F07B01C47407600B53848 /* Beer Hopper */;
+			targetProxy = D06F07CE1C47407600B53848 /* PBXContainerItemProxy */;
+		};
+		D06F07DA1C47407600B53848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D06F07B01C47407600B53848 /* Beer Hopper */;
+			targetProxy = D06F07D91C47407600B53848 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D06F07C01C47407600B53848 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D06F07C11C47407600B53848 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D06F07C51C47407600B53848 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D06F07C61C47407600B53848 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D06F07DF1C47407600B53848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D06F07E01C47407600B53848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D06F07E21C47407600B53848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84FCEF97379245BF2F5B591B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Beer Hopper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crony.beerHopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Beer Hopper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D06F07E31C47407600B53848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FBE0090D01219A6D6DDFEBB /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Beer Hopper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crony.beerHopper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Beer Hopper-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D06F07E51C47407600B53848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Beer HopperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Crony.Beer-HopperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beer Hopper.app/Beer Hopper";
+			};
+			name = Debug;
+		};
+		D06F07E61C47407600B53848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Beer HopperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Crony.Beer-HopperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beer Hopper.app/Beer Hopper";
+			};
+			name = Release;
+		};
+		D06F07E81C47407600B53848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Beer HopperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Crony.Beer-HopperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Beer Hopper";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D06F07E91C47407600B53848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Beer HopperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Crony.Beer-HopperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Beer Hopper";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D06F07AC1C47407600B53848 /* Build configuration list for PBXProject "Beer Hopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06F07DF1C47407600B53848 /* Debug */,
+				D06F07E01C47407600B53848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06F07E11C47407600B53848 /* Build configuration list for PBXNativeTarget "Beer Hopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06F07E21C47407600B53848 /* Debug */,
+				D06F07E31C47407600B53848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06F07E41C47407600B53848 /* Build configuration list for PBXNativeTarget "Beer HopperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06F07E51C47407600B53848 /* Debug */,
+				D06F07E61C47407600B53848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06F07E71C47407600B53848 /* Build configuration list for PBXNativeTarget "Beer HopperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06F07E81C47407600B53848 /* Debug */,
+				D06F07E91C47407600B53848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D06F07A91C47407600B53848 /* Project object */;
+}

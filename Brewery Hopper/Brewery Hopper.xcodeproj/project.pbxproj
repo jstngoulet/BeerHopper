@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D003AEE21CFE3F12007A0471 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AEE11CFE3F12007A0471 /* main.m */; };
+		D003AEE51CFE3F12007A0471 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AEE41CFE3F12007A0471 /* AppDelegate.m */; };
+		D003AEE81CFE3F12007A0471 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AEE71CFE3F12007A0471 /* ViewController.m */; };
+		D003AEEB1CFE3F12007A0471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D003AEE91CFE3F12007A0471 /* Main.storyboard */; };
+		D003AEED1CFE3F12007A0471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D003AEEC1CFE3F12007A0471 /* Assets.xcassets */; };
+		D003AEF01CFE3F12007A0471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D003AEEE1CFE3F12007A0471 /* LaunchScreen.storyboard */; };
+		D003AEFB1CFE3F13007A0471 /* Brewery_HopperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AEFA1CFE3F13007A0471 /* Brewery_HopperTests.m */; };
+		D003AF061CFE3F13007A0471 /* Brewery_HopperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF051CFE3F13007A0471 /* Brewery_HopperUITests.m */; };
+		D003AF141CFE4064007A0471 /* BeerHopperLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D003AF131CFE4064007A0471 /* BeerHopperLogo.png */; };
+		D003AF181CFE40AF007A0471 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF171CFE40AF007A0471 /* ImageButton.m */; };
+		D003AF1A1CFE485C007A0471 /* next-page.png in Resources */ = {isa = PBXBuildFile; fileRef = D003AF191CFE485C007A0471 /* next-page.png */; };
+		D003AF1E1CFE52D8007A0471 /* AddBreweryNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF1D1CFE52D8007A0471 /* AddBreweryNameViewController.m */; };
+		D003AF211CFE52EC007A0471 /* AddBreweryAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF201CFE52EC007A0471 /* AddBreweryAddressViewController.m */; };
+		D003AF241CFE558A007A0471 /* AddBreweryImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF231CFE558A007A0471 /* AddBreweryImagesViewController.m */; };
+		D003AF261CFE569A007A0471 /* prev-page.png in Resources */ = {isa = PBXBuildFile; fileRef = D003AF251CFE569A007A0471 /* prev-page.png */; };
+		D003AF2A1CFE599F007A0471 /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF291CFE599F007A0471 /* MainNavigationViewController.m */; };
+		D003AF391CFE5D41007A0471 /* Brewery.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF361CFE5D41007A0471 /* Brewery.m */; };
+		D003AF3A1CFE5D41007A0471 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF381CFE5D41007A0471 /* Beer.m */; };
+		D003AF3D1CFE5D58007A0471 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF3C1CFE5D58007A0471 /* Event.m */; };
+		D003AF401CFE5D68007A0471 /* ForumObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF3F1CFE5D68007A0471 /* ForumObject.m */; };
+		D003AF431CFE5E2A007A0471 /* InfoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF421CFE5E2A007A0471 /* InfoTableView.m */; };
+		D003AF4B1CFE5F12007A0471 /* BreweryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D003AF451CFE5F12007A0471 /* BreweryCell.xib */; };
+		D003AF4C1CFE5F12007A0471 /* BreweryCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF471CFE5F12007A0471 /* BreweryCellClass.m */; };
+		D003AF4D1CFE5F12007A0471 /* BeerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D003AF481CFE5F12007A0471 /* BeerView.xib */; };
+		D003AF521CFE5F1F007A0471 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D003AF4F1CFE5F1E007A0471 /* EventCell.xib */; };
+		D003AF531CFE5F1F007A0471 /* EventCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF511CFE5F1E007A0471 /* EventCellClass.m */; };
+		D003AF5C1CFE5F36007A0471 /* ForumsCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF5A1CFE5F36007A0471 /* ForumsCellClass.m */; };
+		D003AF5D1CFE5F36007A0471 /* ForumsCellClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = D003AF5B1CFE5F36007A0471 /* ForumsCellClass.xib */; };
+		D003AF601CFE6358007A0471 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF5F1CFE6358007A0471 /* MainViewController.m */; };
+		D003AF631CFE6820007A0471 /* Beer_Hopper_Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = D003AF611CFE6820007A0471 /* Beer_Hopper_Banner.png */; };
+		D0645A3D1D02688B00667C03 /* BreweryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0645A3B1D02688B00667C03 /* BreweryView.m */; };
+		D0645A3E1D02688B00667C03 /* FavoriteBreweryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0645A3C1D02688B00667C03 /* FavoriteBreweryCell.xib */; };
+		D0645A411D026E6800667C03 /* ImageActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0645A401D026E6800667C03 /* ImageActivityView.m */; };
+		D0A1FBC51CFE731C00C18EE4 /* OperationsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A1FBC41CFE731C00C18EE4 /* OperationsView.m */; };
+		D0A1FBC91CFE85AD00C18EE4 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1FBC61CFE85AD00C18EE4 /* calendar.png */; };
+		D0A1FBCA1CFE85AD00C18EE4 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1FBC71CFE85AD00C18EE4 /* clock.png */; };
+		D0A1FBCB1CFE85AD00C18EE4 /* gift.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A1FBC81CFE85AD00C18EE4 /* gift.png */; };
+		D0A1FBCD1CFE876900C18EE4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A1FBCC1CFE876900C18EE4 /* libPods.a */; };
+		D0A1FBCF1CFE877000C18EE4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A1FBCE1CFE877000C18EE4 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D003AEF71CFE3F12007A0471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D003AED51CFE3F12007A0471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D003AEDC1CFE3F12007A0471;
+			remoteInfo = "Brewery Hopper";
+		};
+		D003AF021CFE3F13007A0471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D003AED51CFE3F12007A0471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D003AEDC1CFE3F12007A0471;
+			remoteInfo = "Brewery Hopper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D003AEDD1CFE3F12007A0471 /* Brewery Hopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brewery Hopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D003AEE11CFE3F12007A0471 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D003AEE31CFE3F12007A0471 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D003AEE41CFE3F12007A0471 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D003AEE61CFE3F12007A0471 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D003AEE71CFE3F12007A0471 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D003AEEA1CFE3F12007A0471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D003AEEC1CFE3F12007A0471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D003AEEF1CFE3F12007A0471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D003AEF11CFE3F12007A0471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D003AEF61CFE3F12007A0471 /* Brewery HopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brewery HopperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D003AEFA1CFE3F13007A0471 /* Brewery_HopperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Brewery_HopperTests.m; sourceTree = "<group>"; };
+		D003AEFC1CFE3F13007A0471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D003AF011CFE3F13007A0471 /* Brewery HopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brewery HopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D003AF051CFE3F13007A0471 /* Brewery_HopperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Brewery_HopperUITests.m; sourceTree = "<group>"; };
+		D003AF071CFE3F13007A0471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D003AF131CFE4064007A0471 /* BeerHopperLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BeerHopperLogo.png; path = "../../Beer Hopper/BeerHopperLogo.png"; sourceTree = "<group>"; };
+		D003AF161CFE40AF007A0471 /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageButton.h; sourceTree = "<group>"; };
+		D003AF171CFE40AF007A0471 /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageButton.m; sourceTree = "<group>"; };
+		D003AF191CFE485C007A0471 /* next-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next-page.png"; sourceTree = "<group>"; };
+		D003AF1C1CFE52D8007A0471 /* AddBreweryNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBreweryNameViewController.h; sourceTree = "<group>"; };
+		D003AF1D1CFE52D8007A0471 /* AddBreweryNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBreweryNameViewController.m; sourceTree = "<group>"; };
+		D003AF1F1CFE52EC007A0471 /* AddBreweryAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBreweryAddressViewController.h; sourceTree = "<group>"; };
+		D003AF201CFE52EC007A0471 /* AddBreweryAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBreweryAddressViewController.m; sourceTree = "<group>"; };
+		D003AF221CFE558A007A0471 /* AddBreweryImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBreweryImagesViewController.h; sourceTree = "<group>"; };
+		D003AF231CFE558A007A0471 /* AddBreweryImagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBreweryImagesViewController.m; sourceTree = "<group>"; };
+		D003AF251CFE569A007A0471 /* prev-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prev-page.png"; sourceTree = "<group>"; };
+		D003AF281CFE599F007A0471 /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewController.h; sourceTree = "<group>"; };
+		D003AF291CFE599F007A0471 /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewController.m; sourceTree = "<group>"; };
+		D003AF351CFE5D41007A0471 /* Brewery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Brewery.h; path = "../../Beer Hopper/Brewery.h"; sourceTree = "<group>"; };
+		D003AF361CFE5D41007A0471 /* Brewery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Brewery.m; path = "../../Beer Hopper/Brewery.m"; sourceTree = "<group>"; };
+		D003AF371CFE5D41007A0471 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Beer.h; path = "../../Beer Hopper/Beer.h"; sourceTree = "<group>"; };
+		D003AF381CFE5D41007A0471 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Beer.m; path = "../../Beer Hopper/Beer.m"; sourceTree = "<group>"; };
+		D003AF3B1CFE5D58007A0471 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = "../../Beer Hopper/Event.h"; sourceTree = "<group>"; };
+		D003AF3C1CFE5D58007A0471 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = "../../Beer Hopper/Event.m"; sourceTree = "<group>"; };
+		D003AF3E1CFE5D68007A0471 /* ForumObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForumObject.h; path = "../../Beer Hopper/ForumObject.h"; sourceTree = "<group>"; };
+		D003AF3F1CFE5D68007A0471 /* ForumObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForumObject.m; path = "../../Beer Hopper/ForumObject.m"; sourceTree = "<group>"; };
+		D003AF411CFE5E2A007A0471 /* InfoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableView.h; sourceTree = "<group>"; };
+		D003AF421CFE5E2A007A0471 /* InfoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableView.m; sourceTree = "<group>"; };
+		D003AF451CFE5F12007A0471 /* BreweryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BreweryCell.xib; path = "../../Beer Hopper/BreweryCell.xib"; sourceTree = "<group>"; };
+		D003AF461CFE5F12007A0471 /* BreweryCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BreweryCellClass.h; path = "../../Beer Hopper/BreweryCellClass.h"; sourceTree = "<group>"; };
+		D003AF471CFE5F12007A0471 /* BreweryCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BreweryCellClass.m; path = "../../Beer Hopper/BreweryCellClass.m"; sourceTree = "<group>"; };
+		D003AF481CFE5F12007A0471 /* BeerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BeerView.xib; path = "../../Beer Hopper/BeerView.xib"; sourceTree = "<group>"; };
+		D003AF4F1CFE5F1E007A0471 /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventCell.xib; path = "../../Beer Hopper/EventCell.xib"; sourceTree = "<group>"; };
+		D003AF501CFE5F1E007A0471 /* EventCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventCellClass.h; path = "../../Beer Hopper/EventCellClass.h"; sourceTree = "<group>"; };
+		D003AF511CFE5F1E007A0471 /* EventCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventCellClass.m; path = "../../Beer Hopper/EventCellClass.m"; sourceTree = "<group>"; };
+		D003AF591CFE5F36007A0471 /* ForumsCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForumsCellClass.h; path = "../../Beer Hopper/ForumsCellClass.h"; sourceTree = "<group>"; };
+		D003AF5A1CFE5F36007A0471 /* ForumsCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForumsCellClass.m; path = "../../Beer Hopper/ForumsCellClass.m"; sourceTree = "<group>"; };
+		D003AF5B1CFE5F36007A0471 /* ForumsCellClass.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForumsCellClass.xib; path = "../../Beer Hopper/ForumsCellClass.xib"; sourceTree = "<group>"; };
+		D003AF5E1CFE6358007A0471 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D003AF5F1CFE6358007A0471 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D003AF611CFE6820007A0471 /* Beer_Hopper_Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Beer_Hopper_Banner.png; path = "../../Beer Hopper/Beer_Hopper_Banner.png"; sourceTree = "<group>"; };
+		D003AF621CFE6820007A0471 /* BeerHopperLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BeerHopperLogo.png; path = "../../Beer Hopper/BeerHopperLogo.png"; sourceTree = "<group>"; };
+		D0645A3A1D02688B00667C03 /* BreweryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BreweryView.h; path = "../../Beer Hopper/BreweryView.h"; sourceTree = "<group>"; };
+		D0645A3B1D02688B00667C03 /* BreweryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BreweryView.m; path = "../../Beer Hopper/BreweryView.m"; sourceTree = "<group>"; };
+		D0645A3C1D02688B00667C03 /* FavoriteBreweryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FavoriteBreweryCell.xib; path = "../../Beer Hopper/FavoriteBreweryCell.xib"; sourceTree = "<group>"; };
+		D0645A3F1D026E6800667C03 /* ImageActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageActivityView.h; path = "../../Beer Hopper/ImageActivityView.h"; sourceTree = "<group>"; };
+		D0645A401D026E6800667C03 /* ImageActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageActivityView.m; path = "../../Beer Hopper/ImageActivityView.m"; sourceTree = "<group>"; };
+		D0A1FBC31CFE731C00C18EE4 /* OperationsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationsView.h; sourceTree = "<group>"; };
+		D0A1FBC41CFE731C00C18EE4 /* OperationsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationsView.m; sourceTree = "<group>"; };
+		D0A1FBC61CFE85AD00C18EE4 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = "../../Beer Hopper/calendar.png"; sourceTree = "<group>"; };
+		D0A1FBC71CFE85AD00C18EE4 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock.png; path = "../../Beer Hopper/clock.png"; sourceTree = "<group>"; };
+		D0A1FBC81CFE85AD00C18EE4 /* gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gift.png; path = "../../Beer Hopper/gift.png"; sourceTree = "<group>"; };
+		D0A1FBCC1CFE876900C18EE4 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../../Library/Developer/Xcode/DerivedData/Beer_Hopper-arlrhjyddzutokarizzigqqvsjsp/Build/Products/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		D0A1FBCE1CFE877000C18EE4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D003AEDA1CFE3F12007A0471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A1FBCF1CFE877000C18EE4 /* MapKit.framework in Frameworks */,
+				D0A1FBCD1CFE876900C18EE4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D003AEF31CFE3F12007A0471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D003AEFE1CFE3F13007A0471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D003AED41CFE3F12007A0471 = {
+			isa = PBXGroup;
+			children = (
+				D0A1FBCE1CFE877000C18EE4 /* MapKit.framework */,
+				D0A1FBCC1CFE876900C18EE4 /* libPods.a */,
+				D003AEDF1CFE3F12007A0471 /* Brewery Hopper */,
+				D003AEF91CFE3F12007A0471 /* Brewery HopperTests */,
+				D003AF041CFE3F13007A0471 /* Brewery HopperUITests */,
+				D003AEDE1CFE3F12007A0471 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D003AEDE1CFE3F12007A0471 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D003AEDD1CFE3F12007A0471 /* Brewery Hopper.app */,
+				D003AEF61CFE3F12007A0471 /* Brewery HopperTests.xctest */,
+				D003AF011CFE3F13007A0471 /* Brewery HopperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D003AEDF1CFE3F12007A0471 /* Brewery Hopper */ = {
+			isa = PBXGroup;
+			children = (
+				D003AF441CFE5EFC007A0471 /* Table View Cells */,
+				D003AF311CFE5BBE007A0471 /* Data Objects */,
+				D003AF271CFE597A007A0471 /* Main VIew */,
+				D003AF1B1CFE5278007A0471 /* Create Brewery */,
+				D003AF151CFE4067007A0471 /* Images */,
+				D003AEE31CFE3F12007A0471 /* AppDelegate.h */,
+				D003AEE41CFE3F12007A0471 /* AppDelegate.m */,
+				D003AEE61CFE3F12007A0471 /* ViewController.h */,
+				D003AEE71CFE3F12007A0471 /* ViewController.m */,
+				D003AEE91CFE3F12007A0471 /* Main.storyboard */,
+				D003AEEC1CFE3F12007A0471 /* Assets.xcassets */,
+				D003AEEE1CFE3F12007A0471 /* LaunchScreen.storyboard */,
+				D003AEF11CFE3F12007A0471 /* Info.plist */,
+				D003AEE01CFE3F12007A0471 /* Supporting Files */,
+				D003AF161CFE40AF007A0471 /* ImageButton.h */,
+				D003AF171CFE40AF007A0471 /* ImageButton.m */,
+			);
+			path = "Brewery Hopper";
+			sourceTree = "<group>";
+		};
+		D003AEE01CFE3F12007A0471 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D003AEE11CFE3F12007A0471 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D003AEF91CFE3F12007A0471 /* Brewery HopperTests */ = {
+			isa = PBXGroup;
+			children = (
+				D003AEFA1CFE3F13007A0471 /* Brewery_HopperTests.m */,
+				D003AEFC1CFE3F13007A0471 /* Info.plist */,
+			);
+			path = "Brewery HopperTests";
+			sourceTree = "<group>";
+		};
+		D003AF041CFE3F13007A0471 /* Brewery HopperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D003AF051CFE3F13007A0471 /* Brewery_HopperUITests.m */,
+				D003AF071CFE3F13007A0471 /* Info.plist */,
+			);
+			path = "Brewery HopperUITests";
+			sourceTree = "<group>";
+		};
+		D003AF151CFE4067007A0471 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D0A1FBC61CFE85AD00C18EE4 /* calendar.png */,
+				D0A1FBC71CFE85AD00C18EE4 /* clock.png */,
+				D0A1FBC81CFE85AD00C18EE4 /* gift.png */,
+				D003AF611CFE6820007A0471 /* Beer_Hopper_Banner.png */,
+				D003AF621CFE6820007A0471 /* BeerHopperLogo.png */,
+				D003AF251CFE569A007A0471 /* prev-page.png */,
+				D003AF131CFE4064007A0471 /* BeerHopperLogo.png */,
+				D003AF191CFE485C007A0471 /* next-page.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D003AF1B1CFE5278007A0471 /* Create Brewery */ = {
+			isa = PBXGroup;
+			children = (
+				D003AF1C1CFE52D8007A0471 /* AddBreweryNameViewController.h */,
+				D003AF1D1CFE52D8007A0471 /* AddBreweryNameViewController.m */,
+				D003AF1F1CFE52EC007A0471 /* AddBreweryAddressViewController.h */,
+				D003AF201CFE52EC007A0471 /* AddBreweryAddressViewController.m */,
+				D003AF221CFE558A007A0471 /* AddBreweryImagesViewController.h */,
+				D003AF231CFE558A007A0471 /* AddBreweryImagesViewController.m */,
+			);
+			name = "Create Brewery";
+			sourceTree = "<group>";
+		};
+		D003AF271CFE597A007A0471 /* Main VIew */ = {
+			isa = PBXGroup;
+			children = (
+				D003AF281CFE599F007A0471 /* MainNavigationViewController.h */,
+				D003AF291CFE599F007A0471 /* MainNavigationViewController.m */,
+				D003AF5E1CFE6358007A0471 /* MainViewController.h */,
+				D003AF5F1CFE6358007A0471 /* MainViewController.m */,
+				D0A1FBC31CFE731C00C18EE4 /* OperationsView.h */,
+				D0A1FBC41CFE731C00C18EE4 /* OperationsView.m */,
+			);
+			name = "Main VIew";
+			sourceTree = "<group>";
+		};
+		D003AF311CFE5BBE007A0471 /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D003AF3B1CFE5D58007A0471 /* Event.h */,
+				D003AF3C1CFE5D58007A0471 /* Event.m */,
+				D003AF351CFE5D41007A0471 /* Brewery.h */,
+				D003AF361CFE5D41007A0471 /* Brewery.m */,
+				D003AF371CFE5D41007A0471 /* Beer.h */,
+				D003AF381CFE5D41007A0471 /* Beer.m */,
+				D003AF3E1CFE5D68007A0471 /* ForumObject.h */,
+				D003AF3F1CFE5D68007A0471 /* ForumObject.m */,
+				D0645A3F1D026E6800667C03 /* ImageActivityView.h */,
+				D0645A401D026E6800667C03 /* ImageActivityView.m */,
+				D003AF411CFE5E2A007A0471 /* InfoTableView.h */,
+				D003AF421CFE5E2A007A0471 /* InfoTableView.m */,
+			);
+			name = "Data Objects";
+			sourceTree = "<group>";
+		};
+		D003AF441CFE5EFC007A0471 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D0645A3A1D02688B00667C03 /* BreweryView.h */,
+				D0645A3B1D02688B00667C03 /* BreweryView.m */,
+				D0645A3C1D02688B00667C03 /* FavoriteBreweryCell.xib */,
+				D003AF591CFE5F36007A0471 /* ForumsCellClass.h */,
+				D003AF5A1CFE5F36007A0471 /* ForumsCellClass.m */,
+				D003AF5B1CFE5F36007A0471 /* ForumsCellClass.xib */,
+				D003AF4F1CFE5F1E007A0471 /* EventCell.xib */,
+				D003AF501CFE5F1E007A0471 /* EventCellClass.h */,
+				D003AF511CFE5F1E007A0471 /* EventCellClass.m */,
+				D003AF451CFE5F12007A0471 /* BreweryCell.xib */,
+				D003AF461CFE5F12007A0471 /* BreweryCellClass.h */,
+				D003AF471CFE5F12007A0471 /* BreweryCellClass.m */,
+				D003AF481CFE5F12007A0471 /* BeerView.xib */,
+			);
+			name = "Table View Cells";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D003AEDC1CFE3F12007A0471 /* Brewery Hopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D003AF0A1CFE3F13007A0471 /* Build configuration list for PBXNativeTarget "Brewery Hopper" */;
+			buildPhases = (
+				D003AED91CFE3F12007A0471 /* Sources */,
+				D003AEDA1CFE3F12007A0471 /* Frameworks */,
+				D003AEDB1CFE3F12007A0471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brewery Hopper";
+			productName = "Brewery Hopper";
+			productReference = D003AEDD1CFE3F12007A0471 /* Brewery Hopper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D003AEF51CFE3F12007A0471 /* Brewery HopperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D003AF0D1CFE3F13007A0471 /* Build configuration list for PBXNativeTarget "Brewery HopperTests" */;
+			buildPhases = (
+				D003AEF21CFE3F12007A0471 /* Sources */,
+				D003AEF31CFE3F12007A0471 /* Frameworks */,
+				D003AEF41CFE3F12007A0471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D003AEF81CFE3F12007A0471 /* PBXTargetDependency */,
+			);
+			name = "Brewery HopperTests";
+			productName = "Brewery HopperTests";
+			productReference = D003AEF61CFE3F12007A0471 /* Brewery HopperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D003AF001CFE3F13007A0471 /* Brewery HopperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D003AF101CFE3F13007A0471 /* Build configuration list for PBXNativeTarget "Brewery HopperUITests" */;
+			buildPhases = (
+				D003AEFD1CFE3F13007A0471 /* Sources */,
+				D003AEFE1CFE3F13007A0471 /* Frameworks */,
+				D003AEFF1CFE3F13007A0471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D003AF031CFE3F13007A0471 /* PBXTargetDependency */,
+			);
+			name = "Brewery HopperUITests";
+			productName = "Brewery HopperUITests";
+			productReference = D003AF011CFE3F13007A0471 /* Brewery HopperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D003AED51CFE3F12007A0471 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Justin Goulet";
+				TargetAttributes = {
+					D003AEDC1CFE3F12007A0471 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D003AEF51CFE3F12007A0471 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D003AEDC1CFE3F12007A0471;
+					};
+					D003AF001CFE3F13007A0471 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D003AEDC1CFE3F12007A0471;
+					};
+				};
+			};
+			buildConfigurationList = D003AED81CFE3F12007A0471 /* Build configuration list for PBXProject "Brewery Hopper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D003AED41CFE3F12007A0471;
+			productRefGroup = D003AEDE1CFE3F12007A0471 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D003AEDC1CFE3F12007A0471 /* Brewery Hopper */,
+				D003AEF51CFE3F12007A0471 /* Brewery HopperTests */,
+				D003AF001CFE3F13007A0471 /* Brewery HopperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D003AEDB1CFE3F12007A0471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D003AEF01CFE3F12007A0471 /* LaunchScreen.storyboard in Resources */,
+				D0A1FBC91CFE85AD00C18EE4 /* calendar.png in Resources */,
+				D003AF1A1CFE485C007A0471 /* next-page.png in Resources */,
+				D003AEED1CFE3F12007A0471 /* Assets.xcassets in Resources */,
+				D003AF261CFE569A007A0471 /* prev-page.png in Resources */,
+				D0A1FBCB1CFE85AD00C18EE4 /* gift.png in Resources */,
+				D003AF141CFE4064007A0471 /* BeerHopperLogo.png in Resources */,
+				D003AF4B1CFE5F12007A0471 /* BreweryCell.xib in Resources */,
+				D003AF5D1CFE5F36007A0471 /* ForumsCellClass.xib in Resources */,
+				D003AF4D1CFE5F12007A0471 /* BeerView.xib in Resources */,
+				D003AF521CFE5F1F007A0471 /* EventCell.xib in Resources */,
+				D003AEEB1CFE3F12007A0471 /* Main.storyboard in Resources */,
+				D003AF631CFE6820007A0471 /* Beer_Hopper_Banner.png in Resources */,
+				D0A1FBCA1CFE85AD00C18EE4 /* clock.png in Resources */,
+				D0645A3E1D02688B00667C03 /* FavoriteBreweryCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D003AEF41CFE3F12007A0471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D003AEFF1CFE3F13007A0471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D003AED91CFE3F12007A0471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A1FBC51CFE731C00C18EE4 /* OperationsView.m in Sources */,
+				D003AF3D1CFE5D58007A0471 /* Event.m in Sources */,
+				D0645A3D1D02688B00667C03 /* BreweryView.m in Sources */,
+				D003AF1E1CFE52D8007A0471 /* AddBreweryNameViewController.m in Sources */,
+				D003AF3A1CFE5D41007A0471 /* Beer.m in Sources */,
+				D0645A411D026E6800667C03 /* ImageActivityView.m in Sources */,
+				D003AF531CFE5F1F007A0471 /* EventCellClass.m in Sources */,
+				D003AEE81CFE3F12007A0471 /* ViewController.m in Sources */,
+				D003AF391CFE5D41007A0471 /* Brewery.m in Sources */,
+				D003AF241CFE558A007A0471 /* AddBreweryImagesViewController.m in Sources */,
+				D003AF601CFE6358007A0471 /* MainViewController.m in Sources */,
+				D003AEE51CFE3F12007A0471 /* AppDelegate.m in Sources */,
+				D003AEE21CFE3F12007A0471 /* main.m in Sources */,
+				D003AF2A1CFE599F007A0471 /* MainNavigationViewController.m in Sources */,
+				D003AF4C1CFE5F12007A0471 /* BreweryCellClass.m in Sources */,
+				D003AF431CFE5E2A007A0471 /* InfoTableView.m in Sources */,
+				D003AF211CFE52EC007A0471 /* AddBreweryAddressViewController.m in Sources */,
+				D003AF181CFE40AF007A0471 /* ImageButton.m in Sources */,
+				D003AF5C1CFE5F36007A0471 /* ForumsCellClass.m in Sources */,
+				D003AF401CFE5D68007A0471 /* ForumObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D003AEF21CFE3F12007A0471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D003AEFB1CFE3F13007A0471 /* Brewery_HopperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D003AEFD1CFE3F13007A0471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D003AF061CFE3F13007A0471 /* Brewery_HopperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D003AEF81CFE3F12007A0471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D003AEDC1CFE3F12007A0471 /* Brewery Hopper */;
+			targetProxy = D003AEF71CFE3F12007A0471 /* PBXContainerItemProxy */;
+		};
+		D003AF031CFE3F13007A0471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D003AEDC1CFE3F12007A0471 /* Brewery Hopper */;
+			targetProxy = D003AF021CFE3F13007A0471 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D003AEE91CFE3F12007A0471 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D003AEEA1CFE3F12007A0471 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D003AEEE1CFE3F12007A0471 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D003AEEF1CFE3F12007A0471 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D003AF081CFE3F13007A0471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D003AF091CFE3F13007A0471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D003AF0B1CFE3F13007A0471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Brewery Hopper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jstngoulet.Brewery-Hopper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D003AF0C1CFE3F13007A0471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Brewery Hopper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jstngoulet.Brewery-Hopper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		D003AF0E1CFE3F13007A0471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Brewery HopperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jstngoulet.Brewery-HopperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brewery Hopper.app/Brewery Hopper";
+			};
+			name = Debug;
+		};
+		D003AF0F1CFE3F13007A0471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Brewery HopperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jstngoulet.Brewery-HopperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brewery Hopper.app/Brewery Hopper";
+			};
+			name = Release;
+		};
+		D003AF111CFE3F13007A0471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Brewery HopperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jstngoulet.Brewery-HopperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Brewery Hopper";
+			};
+			name = Debug;
+		};
+		D003AF121CFE3F13007A0471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Brewery HopperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jstngoulet.Brewery-HopperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Brewery Hopper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D003AED81CFE3F12007A0471 /* Build configuration list for PBXProject "Brewery Hopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D003AF081CFE3F13007A0471 /* Debug */,
+				D003AF091CFE3F13007A0471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D003AF0A1CFE3F13007A0471 /* Build configuration list for PBXNativeTarget "Brewery Hopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D003AF0B1CFE3F13007A0471 /* Debug */,
+				D003AF0C1CFE3F13007A0471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D003AF0D1CFE3F13007A0471 /* Build configuration list for PBXNativeTarget "Brewery HopperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D003AF0E1CFE3F13007A0471 /* Debug */,
+				D003AF0F1CFE3F13007A0471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D003AF101CFE3F13007A0471 /* Build configuration list for PBXNativeTarget "Brewery HopperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D003AF111CFE3F13007A0471 /* Debug */,
+				D003AF121CFE3F13007A0471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D003AED51CFE3F12007A0471 /* Project object */;
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SF-UI-Text-Medium.otf">
+            <string>SFUIText-Medium</string>
+        </mutableArray>
+        <mutableArray key="SF-UI-Text-MediumItalic.otf">
+            <string>SFUIText-MediumItalic</string>
+        </mutableArray>
+        <mutableArray key="SF-UI-Text-SemiboldItalic.otf">
+            <string>SFUIText-SemiboldItalic</string>
+            <string>SFUIText-SemiboldItalic</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="customBreweryCell" id="Erj-08-52r" customClass="BreweryCellClass">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Erj-08-52r" id="vdK-Ou-GQ3">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvH-gv-NmS">
+                        <rect key="frame" x="8" y="5" width="359" height="70"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="5" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YcH-rD-1VO">
+                                <rect key="frame" x="8" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Rdt-51-yGZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brewery Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMY-mP-khZ">
+                                <rect key="frame" x="66" y="8" width="285" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="9Bf-vM-v1T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IVt-AP-YP3">
+                                <rect key="frame" x="66" y="37" width="25" height="25"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.41568627450980394" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="qyL-PG-MGa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-SemiboldItalic" family="SF UI Text" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnI-zo-cNg">
+                                <rect key="frame" x="99" y="37" width="42" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="WL0-ah-PaJ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Beers">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="12" name="SFUIText-MediumItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="yIr-UN-w1K">
+                                <rect key="frame" x="166" y="37" width="25" height="25"/>
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.41568627450000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="PTO-Hs-fRd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-SemiboldItalic" family="SF UI Text" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iw-tV-fJK">
+                                <rect key="frame" x="199" y="37" width="52" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="QCY-m3-Mbo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-MediumItalic" family="SF UI Text" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yIr-UN-w1K" firstAttribute="baseline" secondItem="2Iw-tV-fJK" secondAttribute="baseline" id="1ns-9U-MNo"/>
+                            <constraint firstItem="YcH-rD-1VO" firstAttribute="leading" secondItem="cvH-gv-NmS" secondAttribute="leadingMargin" id="7YP-bI-kIx"/>
+                            <constraint firstItem="YcH-rD-1VO" firstAttribute="centerY" secondItem="cvH-gv-NmS" secondAttribute="centerY" id="HbH-rS-3gL"/>
+                            <constraint firstItem="IVt-AP-YP3" firstAttribute="baseline" secondItem="WnI-zo-cNg" secondAttribute="baseline" id="Hgt-R1-en8"/>
+                            <constraint firstItem="WnI-zo-cNg" firstAttribute="baseline" secondItem="yIr-UN-w1K" secondAttribute="baseline" id="Hpo-lX-zNR"/>
+                            <constraint firstItem="xMY-mP-khZ" firstAttribute="top" secondItem="cvH-gv-NmS" secondAttribute="topMargin" id="N8u-4Z-QMK"/>
+                            <constraint firstItem="IVt-AP-YP3" firstAttribute="bottom" secondItem="cvH-gv-NmS" secondAttribute="bottomMargin" id="S2a-IB-Ag3"/>
+                            <constraint firstItem="2Iw-tV-fJK" firstAttribute="leading" secondItem="yIr-UN-w1K" secondAttribute="trailing" constant="8" symbolic="YES" id="TwE-Yo-taZ"/>
+                            <constraint firstItem="IVt-AP-YP3" firstAttribute="top" secondItem="xMY-mP-khZ" secondAttribute="bottom" constant="7" id="W99-zv-UYo"/>
+                            <constraint firstItem="IVt-AP-YP3" firstAttribute="firstBaseline" secondItem="yIr-UN-w1K" secondAttribute="firstBaseline" id="Y8f-08-5DG"/>
+                            <constraint firstItem="xMY-mP-khZ" firstAttribute="trailing" secondItem="cvH-gv-NmS" secondAttribute="trailingMargin" id="epc-5E-d3T"/>
+                            <constraint firstItem="xMY-mP-khZ" firstAttribute="leading" secondItem="YcH-rD-1VO" secondAttribute="trailing" constant="8" symbolic="YES" id="gsG-Sb-stM"/>
+                            <constraint firstItem="IVt-AP-YP3" firstAttribute="top" secondItem="WnI-zo-cNg" secondAttribute="top" id="k5D-ZQ-pTe"/>
+                            <constraint firstItem="WnI-zo-cNg" firstAttribute="leading" secondItem="IVt-AP-YP3" secondAttribute="trailing" constant="8" symbolic="YES" id="kSP-rG-cxJ"/>
+                            <constraint firstItem="YcH-rD-1VO" firstAttribute="top" secondItem="cvH-gv-NmS" secondAttribute="top" constant="10" id="moj-X7-COI"/>
+                            <constraint firstItem="WnI-zo-cNg" firstAttribute="firstBaseline" secondItem="2Iw-tV-fJK" secondAttribute="firstBaseline" id="x5b-g3-p1o"/>
+                            <constraint firstItem="xMY-mP-khZ" firstAttribute="leading" secondItem="IVt-AP-YP3" secondAttribute="leading" id="xWx-AS-zXs"/>
+                            <constraint firstItem="yIr-UN-w1K" firstAttribute="leading" secondItem="WnI-zo-cNg" secondAttribute="trailing" constant="25" id="zwo-5v-ZDB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.90588235289999997" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="cvH-gv-NmS" firstAttribute="centerY" secondItem="vdK-Ou-GQ3" secondAttribute="centerY" id="Bvt-0p-pkW"/>
+                    <constraint firstItem="cvH-gv-NmS" firstAttribute="trailing" secondItem="vdK-Ou-GQ3" secondAttribute="trailingMargin" id="HFQ-TQ-BAc"/>
+                    <constraint firstItem="cvH-gv-NmS" firstAttribute="top" secondItem="vdK-Ou-GQ3" secondAttribute="topMargin" constant="-3" id="OIf-qW-Yp1"/>
+                    <constraint firstItem="cvH-gv-NmS" firstAttribute="leading" secondItem="vdK-Ou-GQ3" secondAttribute="leadingMargin" id="Ot8-dz-TV1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundView" destination="cvH-gv-NmS" id="3ao-Bj-9oB"/>
+                <outlet property="beersOnCO2" destination="IVt-AP-YP3" id="OdV-HM-2EO"/>
+                <outlet property="breweryName" destination="xMY-mP-khZ" id="tdu-gp-BIQ"/>
+                <outlet property="eventsCount" destination="yIr-UN-w1K" id="QvY-mh-RJi"/>
+                <outlet property="profilePic" destination="YcH-rD-1VO" id="OVq-He-VoW"/>
+            </connections>
+            <point key="canvasLocation" x="536.5" y="398"/>
+        </tableViewCell>
+    </objects>
+</document>
