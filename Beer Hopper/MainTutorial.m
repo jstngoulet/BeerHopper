@@ -13,6 +13,7 @@
 -(id)initWithFrame:(CGRect)frame{
     
     self = [super initWithFrame:frame];
+    analytics = [[MyAnalytics alloc] init];
     return self;
 }
 
@@ -24,6 +25,8 @@
     SingleTutorialPage *welcome = [self newPageWithType:kViewTypeHeader title:@"" text:@"" buttonText:@"Start"];
     [self addSubview:welcome];
     //welcome.backgroundColor = [UIColor whiteColor];
+    
+    [analytics viewShown:@"Introduction"];
 }
 
 -(void)showLocationRequest{
@@ -42,6 +45,9 @@
 }
 
 -(void)next{
+    
+   
+    
     pageNumber++;
     NSLog(@"Next tapped: %i", pageNumber);
     SingleTutorialPage *welcome;
@@ -52,6 +58,9 @@
     else if(pageNumber == 3){
         welcome = [self newPageWithType:kViewTypeContent title:@"Notifications" text:@"We don’t wish to annoy you!\n\nNotifications will be provided\nAT MOST\ntwice a week. This way, you get updates on what is going on near you and you are not bothered by our service." buttonText:@"Notification Settings"];
         [welcome.nextButton.primaryButton addTarget:self action:@selector(requestNotifications) forControlEvents:UIControlEventTouchUpInside];
+        
+        //Increase the page coun to skip the email step
+        pageNumber++;
     }
     else if (pageNumber == 4){
         welcome = [self newPageWithType:kViewTypeTextField title:@"Account Email" text:@"Please input your email to create an account.\n\nWe will never send any unwanted emails! If you recieve any that appear to come from Beer Hopper, please contact us immediately!" buttonText:@"Create"];
@@ -61,7 +70,7 @@
     }
     else if(pageNumber == 5){
         //SAve the previous tesxt to save as email
-        userEmail = currentTextField.text;
+        //userEmail = currentTextField.text;
         
         welcome = [self newPageWithType:kViewTypeTextField title:@"Create Alias" text:@"What name do you want to go by in the\nBeer Hopper Community?\n\nPlease create an appropriate name.\nPlease note that if the alias is deemed unappropriate, your alias will be randomly changed for you." buttonText:@"It's Good"];
         welcome.isAddingAlias = YES;
@@ -75,6 +84,8 @@
     }
     welcome.backgroundColor = [UIColor whiteColor];
     [self addSubview:welcome];
+    
+    [analytics eventAction:@"Selected Next Button" category:@"Introduction" description:welcome.title breweryIden:@"" beerIden:@"" eventIden:@""];
 }
 
 -(SingleTutorialPage *)newPageWithType:(NSString *)type title:(NSString *)title text:(NSString *)text buttonText:(NSString *)btnText{
@@ -107,7 +118,22 @@
     if(tempData.description.length == 0){
         tempData = [[HopperData alloc] init];
     }
-    [tempData submitNewUserWithEmail:userEmail alias:currentTextField.text];
+    userEmail = currentTextField.text;
+    
+    //Now, create a custom email using the alias. We must remove all special characters and replace spaces with a '.'
+    // Create character set with specified characters
+    NSMutableCharacterSet *characterSet = [NSMutableCharacterSet characterSetWithCharactersInString:@",./;'[]!@#$%^&*()-"];
+    
+    // Build array of components using specified characters as separtors
+    NSArray *arrayOfComponents = [userEmail componentsSeparatedByCharactersInSet:characterSet];
+    
+    // Create string from the array components
+    NSString *newEmail = [arrayOfComponents componentsJoinedByString:@""];
+    newEmail = [newEmail stringByReplacingOccurrencesOfString:@" " withString:@"."];
+    newEmail = [newEmail stringByAppendingString:@"@BeerHopper.com"];
+    
+    
+    [tempData submitNewUserWithEmail:newEmail alias:currentTextField.text];
 }
 
 -(void)requestNotifications{

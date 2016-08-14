@@ -31,7 +31,7 @@
     //self.userID = @"";
     
     //If I want to turn on my own requests
-    //[self submitRequest];
+    [self submitRequest];
 }
 
 -(void)eventAction:(NSString *)action category:(NSString *)category description:(NSString *)label breweryIden:(NSString *)breweryIden beerIden:(NSString *)beerIden eventIden:(NSString *)eventIden{
@@ -46,7 +46,7 @@
     masterArray = [NSArray arrayWithObjects:self.thisBreweryIden, self.thisBeerIden, self.thisEventIden, self.userID, nil];
     
     //submit the request
-    //[self submitRequest];
+    [self submitRequest];
 }
 
 -(NSString *)lineOfRequestWithName:(NSString *)name iden:(NSString *)iden{

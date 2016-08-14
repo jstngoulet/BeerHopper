@@ -383,6 +383,7 @@
                 
                 if (cell.thisBeer.image.description.length == 0) {
                     cell.beerImage.image = [UIImage imageNamed:@"beer2.png"];
+                    //cell.beerImage.image = self..profilePicture;
                 }
                 
                 [cell setSelectionStyle:UITableViewCellSelectionStyleNone];

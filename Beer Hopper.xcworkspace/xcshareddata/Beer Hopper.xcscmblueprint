@@ -1,25 +1,25 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D3B35A87F65360A57CDF92BD97A7482437C58D11",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A8418F6750297E684F7FAFDFFD9DD82301E5A4DC",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "D3B35A87F65360A57CDF92BD97A7482437C58D11" : 0,
-    "EBB414D3626AA97FA55F27D2249EAF415E2C8AC0" : 0
+    "EBB414D3626AA97FA55F27D2249EAF415E2C8AC0" : 0,
+    "A8418F6750297E684F7FAFDFFD9DD82301E5A4DC" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "73F24F63-207F-4473-86FD-AC64ABC47647",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "D3B35A87F65360A57CDF92BD97A7482437C58D11" : "Beer_Hopper_iOS\/",
-    "EBB414D3626AA97FA55F27D2249EAF415E2C8AC0" : "crony-ios\/"
+    "EBB414D3626AA97FA55F27D2249EAF415E2C8AC0" : "..\/crony-ios",
+    "A8418F6750297E684F7FAFDFFD9DD82301E5A4DC" : "Beer_Hopper\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Beer Hopper",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Beer_Hopper\/Beer Hopper.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Beer Hopper.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jstngoulet\/BeerHopper",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jstngoulet\/BeerHopper.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D3B35A87F65360A57CDF92BD97A7482437C58D11"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A8418F6750297E684F7FAFDFFD9DD82301E5A4DC"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/crony-team\/crony-ios.git",

@@ -11,6 +11,7 @@
 #import "Constants.h"
 #import <MapKit/MapKit.h>
 #import "AppDelegate.h"
+#import "MyAnalytics.h"
 
 @interface MainTutorial : UIView <CLLocationManagerDelegate>
 {
@@ -19,6 +20,7 @@
     CLLocationManager *locationManager;
     UITextField *currentTextField;
     NSString *userEmail, *userAlias;
+    MyAnalytics *analytics;
 }
 @property (nonatomic, nonnull) UIImage *headerImage;
 @property (nonatomic, nonnull) UIColor *mainColor;

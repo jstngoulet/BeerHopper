@@ -308,6 +308,7 @@
     
 }
 
+
 -(void)getFromQuery:(NSString *)query
 {
     NSURL*url = [NSURL URLWithString:[NSString stringWithFormat:@"%@&api_key=keyBAo5QorTmqZmN8", query]];

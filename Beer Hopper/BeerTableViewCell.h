@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "Beer.h"
 #import "BeerView.h"
+#import "Brewery.h"
 #import "MyAnalytics.h"
 
 @interface BeerTableViewCell : UITableViewCell <NSURLConnectionDelegate> {
     NSURLConnection *voteForBeer, *downVoteBeer;
 }
+@property (weak, nonatomic) Brewery *thisBrewery;
 @property (weak, nonatomic) IBOutlet UILabel *beernNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *abvLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ibuLabel;
