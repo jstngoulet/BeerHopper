@@ -83,7 +83,7 @@
 
 -(void)collapseView{
     //Sets the view to be the min view size
-    NSLog(@"isOpen: %i", isOpen);
+    //NSLog(@"isOpen: %i", isOpen);
     float anim = .5f;
     
     if(isOpen){
