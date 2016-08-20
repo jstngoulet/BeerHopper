@@ -10,6 +10,8 @@
 		BC36EFD3BFA0995525A66758 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 932800C1A560C90AEFD670E8 /* libPods.a */; };
 		D003AF681CFE6E0B007A0471 /* NothingFoundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D003AF661CFE6E0B007A0471 /* NothingFoundTableViewCell.m */; };
 		D003AF691CFE6E0B007A0471 /* NothingFoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D003AF671CFE6E0B007A0471 /* NothingFoundTableViewCell.xib */; };
+		D010A4C21D679779007B9C96 /* Arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = D010A4C11D679779007B9C96 /* Arrow2.png */; };
+		D010A4C51D679E41007B9C96 /* CollapseableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D010A4C41D679E41007B9C96 /* CollapseableView.m */; };
 		D012C6391C8BF10B0094F8AB /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = D012C6381C8BF10B0094F8AB /* LoginView.m */; };
 		D012C63C1C8BF1290094F8AB /* CronyCount.m in Sources */ = {isa = PBXBuildFile; fileRef = D012C63B1C8BF1290094F8AB /* CronyCount.m */; };
 		D012C63F1C8BF1380094F8AB /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = D012C63E1C8BF1380094F8AB /* Error.m */; };
@@ -259,6 +261,9 @@
 		D003AF651CFE6E0B007A0471 /* NothingFoundTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NothingFoundTableViewCell.h; sourceTree = "<group>"; };
 		D003AF661CFE6E0B007A0471 /* NothingFoundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NothingFoundTableViewCell.m; sourceTree = "<group>"; };
 		D003AF671CFE6E0B007A0471 /* NothingFoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundTableViewCell.xib; sourceTree = "<group>"; };
+		D010A4C11D679779007B9C96 /* Arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow2.png; sourceTree = SOURCE_ROOT; };
+		D010A4C31D679E41007B9C96 /* CollapseableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollapseableView.h; sourceTree = "<group>"; };
+		D010A4C41D679E41007B9C96 /* CollapseableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollapseableView.m; sourceTree = "<group>"; };
 		D012C6371C8BF10B0094F8AB /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		D012C6381C8BF10B0094F8AB /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		D012C63A1C8BF1290094F8AB /* CronyCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CronyCount.h; sourceTree = "<group>"; };
@@ -575,6 +580,8 @@
 				D017F8B41C94D5F100E66CE3 /* MiniDetailView.m */,
 				D05E939F1CBC4975005B65E9 /* CustomTableView.h */,
 				D05E93A01CBC4975005B65E9 /* CustomTableView.m */,
+				D010A4C31D679E41007B9C96 /* CollapseableView.h */,
+				D010A4C41D679E41007B9C96 /* CollapseableView.m */,
 				D094CA521CF7E907002B771C /* ImageActivityView.h */,
 				D094CA531CF7E907002B771C /* ImageActivityView.m */,
 				D003AF651CFE6E0B007A0471 /* NothingFoundTableViewCell.h */,
@@ -827,6 +834,7 @@
 		D06F07ED1C4743A700B53848 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D010A4C11D679779007B9C96 /* Arrow2.png */,
 				D02F7C641D30529E00EFFBAE /* NoPostsFound.png */,
 				D02F7C5F1D303B0300EFFBAE /* NoEventsFound.png */,
 				D02F7C5B1D30320100EFFBAE /* HowToLikeBeers.png */,
@@ -1157,6 +1165,7 @@
 				D04D6A4A1C4DA53F00FB19E5 /* parkday-trim.png in Resources */,
 				D06F086B1C4867CE00B53848 /* icon_iPad-40@3x.png in Resources */,
 				D0F27D5C1CF3BE9D0065AF07 /* SF-UI-Text-MediumItalic.otf in Resources */,
+				D010A4C21D679779007B9C96 /* Arrow2.png in Resources */,
 				D0F27D4F1CF3BE9D0065AF07 /* SF-UI-Display-Light.otf in Resources */,
 				D0B499A81C4B74F000E66F7A /* 1536496_425636430945880_4526480723997387063_n.jpg in Resources */,
 				D0F27D5D1CF3BE9D0065AF07 /* SF-UI-Text-Regular.otf in Resources */,
@@ -1363,6 +1372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D06F085B1C485F7900B53848 /* Beer.m in Sources */,
+				D010A4C51D679E41007B9C96 /* CollapseableView.m in Sources */,
 				D04D6A5E1C514DE200FB19E5 /* HopperData.m in Sources */,
 				D012C6391C8BF10B0094F8AB /* LoginView.m in Sources */,
 				D06D04D81C4B04C900F03C1C /* EventsViewController.m in Sources */,

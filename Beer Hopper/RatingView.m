@@ -21,7 +21,7 @@
 -(void)build{
     
     //Add main view (this one will have a shadow)
-    self.mainView = [[UIView alloc] initWithFrame:CGRectMake(20, 10, self.frame.size.width - 60, self.frame.size.height - 20)];
+    self.mainView = [[UIView alloc] initWithFrame:CGRectMake(0, 10, self.frame.size.width - 60, self.frame.size.height - 20)];
     [self addSubview:self.mainView];
     
     //Add date label to the top left

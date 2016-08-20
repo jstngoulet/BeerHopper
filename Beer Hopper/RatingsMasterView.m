@@ -24,8 +24,9 @@
 -(void)build{
     //self.currentY = 10;
     for (ForumObject *temp in self.posts) {
-        RatingView *tempView = [[RatingView alloc] initWithFrame:CGRectMake(10, self.currentY, self.frame.size.width, self.frame.size.width/2) Post:temp];
-        tempView.frame = CGRectMake(10, self.currentY, self.frame.size.width - 20, tempView.mainView.frame.size.height + 20);
+        RatingView *tempView = [[RatingView alloc] initWithFrame:CGRectMake(-10, self.currentY, self.frame.size.width, self.frame.size.width/2) Post:temp];
+        tempView.frame = CGRectMake(-10, self.currentY, self.frame.size.width, tempView.mainView.frame.size.height + 20);
+        tempView.center = CGPointMake(self.frame.size.width/2 - 10, tempView.center.y);
         [self.mainScroller addSubview:tempView];
         self.currentY += tempView.frame.size.height;
     }

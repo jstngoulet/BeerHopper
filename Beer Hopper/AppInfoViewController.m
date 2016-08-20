@@ -83,6 +83,7 @@
                 }
                 break;
             }
+            [table performSelectorOnMainThread:@selector(collapseAll) withObject:NULL waitUntilDone:YES];
             
         }else{
             NSLog(@"Data is Null");

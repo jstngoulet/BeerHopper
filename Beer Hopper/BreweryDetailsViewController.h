@@ -11,6 +11,7 @@
 #import "CustomTableView.h"
 #import "ImageActivityView.h"
 #import "RatingsMasterView.h"
+#import "CollapseableView.h"
 
 @interface BreweryDetailsViewController : UIViewController{
     ImageActivityView *activity;

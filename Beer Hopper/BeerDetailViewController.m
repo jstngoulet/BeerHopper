@@ -156,6 +156,8 @@
                 else{
                     [self performSelectorOnMainThread:@selector(addRatingsView:) withObject:foundRecords waitUntilDone:NO];
                 }
+                
+                [self.mainBeerTableView performSelectorOnMainThread:@selector(collapseAll) withObject:NULL waitUntilDone:YES];
             }
             else{
                 NSLog(@"Error: %@", err.localizedDescription);
@@ -189,15 +191,26 @@
 
 -(void)addRatingsView:(NSMutableArray *) foundRecords{
     if(foundRecords.count > 0){
-    [self.mainBeerTableView addSection:@"Reviews" info:@""];
-    RatingsMasterView *ratingsView = [[RatingsMasterView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/2) andPosts:[foundRecords sortedArrayUsingSelector:@selector(sortByDate:)]];
-    [self.mainBeerTableView addView:ratingsView];
-    [activity stopAnimating];
-    [activity removeFromSuperview];
+        CollapseableView *temp = [[CollapseableView alloc] initWithFrame:CGRectMake(0, self.mainBeerTableView.offset, self.mainBeerTableView.frame.size.width- 20, self.mainBeerTableView.frame.size.height)];
+        temp.title = @"Reviews";
+        
+        RatingsMasterView *ratingsView = [[RatingsMasterView alloc] initWithFrame:CGRectMake(0, 0, temp.frame.size.width + 10, self.view.frame.size.height/2) andPosts:[foundRecords sortedArrayUsingSelector:@selector(sortByDate:)]];
+        //[newTableView addView:ratingsView];
+        [activity stopAnimating];
+        [activity removeFromSuperview];
+        
+        //Add the ratings view to the master view
+        [temp addContent:ratingsView];
+        [self.mainBeerTableView addSubview:temp];
+        ratingsView.center = CGPointMake(temp.frame.size.width/2 - 20, ratingsView.center.y);
+        
+        self.mainBeerTableView.offset += temp.frame.size.height;
+        [self.mainBeerTableView updateSize];
     }
     else{
         //[self.mainBeerTableView addSection:@"Reviews" info:@"No Reviews Yet!\nSubmit one above!"];
     }
+    
 }
 
 - (void)didReceiveMemoryWarning {

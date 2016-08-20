@@ -66,7 +66,7 @@
     if(numberOfVisits >= self.thisBrewery.numberOfTimesBeforeReview)[newTableView addRatingSystemWithScale:NSMakeRange(1, 10) title:@"Rate Brewery" helpText:@"Rate the Brewery by slideing the scale to the left and right! When you are satisfied with your response, submit it or add a comment!" submissionURl:NULL];
     else{
         int difference = self.thisBrewery.numberOfTimesBeforeReview - numberOfVisits;
-        [newTableView addSection:@"In Order To Review:" info:[NSString stringWithFormat:@"To review, you must visit this brewery %i more time%@ seperated by at least 12 hours.", difference, (difference == 1)?@"":@"s"]];
+        [newTableView addSection:@"Review Not Available" info:[NSString stringWithFormat:@"To review, you must visit this brewery %i more time%@ seperated by at least 12 hours.", difference, (difference == 1)?@"":@"s"]];
     }
     
     [newTableView addRow:@"Visits:" info:[NSString stringWithFormat:@"%i", numberOfVisits]];
@@ -79,12 +79,14 @@
     //newTableView.offset += 20;
     if (self.thisBrewery.ammenities.length != 0) [newTableView addSection:@"Ammenities" info:self.thisBrewery.ammenities];
     if (![self.thisBrewery.hours isEqual:NULL]) [newTableView addSection:@"Hours" info:self.thisBrewery.hours];
+    [newTableView addMapWithPoints:[NSArray arrayWithObjects:self.thisBrewery.location, nil]];
     if (![self.thisBrewery.breweryDescription isEqual:NULL]) [newTableView addSection:@"About" info:self.thisBrewery.breweryDescription];
     if (self.thisBrewery.notes.length > 0) [newTableView addSection:@"Notes" info:self.thisBrewery.notes];
     if (self.currentSite.description.length != 0) [newTableView addButton:@"Website" target:@selector(goToWebsite)];
     newTableView.currentSite = self.currentSite;
     
     [self addReviews];
+    
     
     NSLog(@"Location: Lat: %f, Lng: %f", self.thisBrewery.location.coordinate.latitude, self.thisBrewery.location.coordinate.longitude);
     
@@ -180,7 +182,10 @@
                 if (iterator ==0 ) {
                     NSLog(@"No Reviews found!");
                     [self performSelectorOnMainThread:@selector(hideActivity) withObject:NULL waitUntilDone:NO];
+                    
                 }
+                //Collapse all views
+                [newTableView performSelectorOnMainThread:@selector(collapseAll) withObject:NULL waitUntilDone:YES];
             }
             else{
                 NSLog(@"Error: %@", err.localizedDescription);
@@ -196,11 +201,23 @@
 
 -(void)addRatingsView:(NSMutableArray *) foundRecords{
     if(foundRecords.count > 0){
-        [newTableView addSection:@"Reviews" info:@""];
-        RatingsMasterView *ratingsView = [[RatingsMasterView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/2) andPosts:[foundRecords sortedArrayUsingSelector:@selector(sortByDate:)]];
-        [newTableView addView:ratingsView];
+        //[newTableView addSection:@"Reviews" info:@""];
+        
+        CollapseableView *temp = [[CollapseableView alloc] initWithFrame:CGRectMake(0, newTableView.offset, newTableView.frame.size.width- 20, newTableView.frame.size.height)];
+        temp.title = @"Reviews";
+        
+        RatingsMasterView *ratingsView = [[RatingsMasterView alloc] initWithFrame:CGRectMake(0, 0, temp.frame.size.width + 10, self.view.frame.size.height/2) andPosts:[foundRecords sortedArrayUsingSelector:@selector(sortByDate:)]];
+        //[newTableView addView:ratingsView];
         [activity stopAnimating];
         [activity removeFromSuperview];
+        
+        //Add the ratings view to the master view
+        [temp addContent:ratingsView];
+        [newTableView addSubview:temp];
+        ratingsView.center = CGPointMake(temp.frame.size.width/2 - 10, ratingsView.center.y);
+        
+        newTableView.offset += temp.frame.size.height;
+        [newTableView updateSize];
     }
     else{
         //[newTableView addSection:@"Reviews" info:@"No Reviews Yet!\nSubmit one above!"];

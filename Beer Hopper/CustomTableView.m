@@ -10,6 +10,8 @@
 
 @implementation CustomTableView
 
+#define METERS_PER_MILE 1609.344
+
 -(id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -69,14 +71,21 @@
     //Increase the offset a little
     self.offset += 10;
     
+    //Add the collapseable view
+    CollapseableView *thisView = [[CollapseableView alloc] initWithFrame:CGRectMake(10, self.offset, self.frame.size.width - 20, self.frame.size.height)];
+    thisView.title = titleOfSection;
+    [self addSubview:thisView];
+    
     //Create a container
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, self.offset, self.frame.size.width, self.frame.size.height/5)];
+    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(0, self.offset, self.frame.size.width - 40, self.frame.size.height/5)];
+    //container.backgroundColor = [UIColor yellowColor];
+    
     
     //Add a label
     //Now, add the title (1/3 the width)
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, container.frame.size.width/3 - 10, container.frame.size.height - 10)];
     titleLabel.numberOfLines = 0;
-    titleLabel.text = titleOfSection;
+    //titleLabel.text = titleOfSection;
     titleLabel.font = [UIFont boldSystemFontOfSize:16];
     titleLabel.textColor = [UIColor lightGrayColor];
     titleLabel.textAlignment = NSTextAlignmentRight;
@@ -92,7 +101,7 @@
     helpText.font = [UIFont systemFontOfSize:14];
     [helpText sizeToFit];
     [container addSubview:helpText];
-    helpText.frame = CGRectMake(0, 0, self.frame.size.width - 20, helpText.frame.size.height);
+    helpText.frame = CGRectMake(0, 0, container.frame.size.width - 20, helpText.frame.size.height);
     helpText.center = CGPointMake(container.frame.size.width/2, titleLabel.frame.origin.y*2 + titleLabel.frame.size.height + helpText.frame.size.height/2);
     
     //Add the rating slider
@@ -109,12 +118,10 @@
     UILabel *minValueLabel = [self addLabelWithTitle:[NSString stringWithFormat:@"%i", (int)slider.minimumValue]];
     [container addSubview:minValueLabel];
     [minValueLabel sizeToFit];
-    minValueLabel.center = CGPointMake(slider.frame.origin.x - minValueLabel.frame.size.width, slider.center.y);
     
     UILabel *maxValueLabel = [self addLabelWithTitle:[NSString stringWithFormat:@"%i", (int)slider.maximumValue]];
     [container addSubview:maxValueLabel];
     [maxValueLabel sizeToFit];
-    maxValueLabel.center = CGPointMake(slider.frame.origin.x + maxValueLabel.frame.size.width + slider.frame.size.width, slider.center.y);
     
     UILabel *currentValue = [self addLabelWithTitle:[NSString stringWithFormat:@"%i", (int)slider.value]];
     [container addSubview:currentValue];
@@ -126,7 +133,6 @@
     submit = [[ImageButton alloc] initWithFrame:CGRectMake(0, 0, container.frame.size.width/2, container.frame.size.width/4)];
     submit.primaryTitle.text = @"Submit";
     [container addSubview:submit];
-    submit.center = CGPointMake(container.frame.size.width/3, currentValue.frame.origin.y + currentValue.frame.size.height + submit.frame.size.height/1.5);
     submit.mainImageView.image = [UIImage imageNamed:@"Submit.png"];
     submit.disabledImage = [UIImage imageNamed:@"Submit_Disabled.png"];
     [self alterButton:submit];
@@ -138,18 +144,66 @@
     addComment = [[ImageButton alloc] initWithFrame:submit.frame];
     addComment.primaryTitle.text = @"Add Comment";
     [container addSubview:addComment];
-    addComment.center = CGPointMake(container.frame.size.width/3 * 2, submit.center.y);
     addComment.mainImageView.image = [UIImage imageNamed:@"Add Comment.png"];
     addComment.disabledImage = [UIImage imageNamed:@"Add Comment_Disabled.png"];
     [self alterButton:addComment];
     [addComment.primaryButton addTarget:self action:@selector(addComment) forControlEvents:UIControlEventTouchUpInside];
     
-    container.frame = CGRectMake(container.frame.origin.x, container.frame.origin.y, container.frame.size.width, addComment.frame.origin.y + addComment.frame.size.height);
+    container.frame = CGRectMake(container.frame.origin.x, container.frame.origin.y, container.frame.size.width, container.frame.size.height + addComment.frame.origin.y + addComment.frame.size.height*2);
     //container.backgroundColor = [UIColor redColor];
+    [thisView addContent:container];
     
-    self.offset += container.frame.size.height;
-    [self addSubview:container];
+    
+    
+    //Adjust all of the centers
+    helpText.center = CGPointMake(container.frame.size.width/2, helpText.center.y);
+    slider.center = CGPointMake(container.frame.size.width/2, slider.center.y);
+    minValueLabel.center = CGPointMake(slider.frame.origin.x - minValueLabel.frame.size.width, slider.center.y);
+    maxValueLabel.center = CGPointMake(slider.frame.origin.x + maxValueLabel.frame.size.width + slider.frame.size.width, slider.center.y);
+    
+    submit.center = CGPointMake(container.frame.size.width/3, currentValue.frame.origin.y + currentValue.frame.size.height + submit.frame.size.height/1.5);
+    addComment.center = CGPointMake(container.frame.size.width/3 * 2, submit.center.y);
+    container.frame = CGRectMake(container.frame.origin.x, container.frame.origin.y, container.frame.size.width, addComment.frame.origin.y + addComment.frame.size.height);
+    
+    thisView.maxHeight = submit.frame.size.height + submit.frame.origin.y + thisView.minHeight;
+    
+    
+    self.offset += submit.frame.size.height + submit.frame.origin.y + thisView.minHeight;
     thisURL = sendingPlace;
+}
+
+-(void)addMapWithPoints:(NSArray *)arrayOfPoints{
+    //Create a map
+    MKMapView *currentMap = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width - 20, (self.frame.size.width - 20)/2)];
+    currentMap.showsUserLocation = YES;
+    
+    //Create the collapseable view
+    CollapseableView *mapView = [[CollapseableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width - 20, self.frame.size.height * 3)];
+    mapView.title = @"Location";
+    NSLog(@"User location title: %@", currentMap.userLocation.title);
+    
+    /*
+    @try{
+    CLLocationCoordinate2D midpoint = CLLocationCoordinate2DMake((currentMap.userLocation.location.coordinate.latitude + self.thisBrewery.location.coordinate.latitude)/2, (currentMap.userLocation.location.coordinate.longitude + self.thisBrewery.location.coordinate.longitude)/2);
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(currentMap.userLocation.location.coordinate, (self.thisBrewery.distance*2), (self.thisBrewery.distance*2));
+        
+        [currentMap setRegion:viewRegion animated:YES];
+    }
+    @catch(NSException *e){
+        NSLog(@"Exception: %@", e.description);
+    }
+     */
+    MKCoordinateRegion region = MKCoordinateRegionMake(self.thisBrewery.location.coordinate, MKCoordinateSpanMake(.05, .05));
+    [currentMap setRegion:region animated:YES];
+    
+    //For the arawy of points
+    for(int i = 0; i < arrayOfPoints.count; i++){
+        MKAnnotationView *animateAV = [[MKAnnotationView alloc] init];
+    }
+    
+    [mapView addContent:currentMap];
+    [self addSubview:mapView];
+    
 }
 
 -(void)addComment{
@@ -228,6 +282,7 @@
     
     self.offset += 10;
     
+    /*
     //Add a line to seperate
     UILabel *line = [[UILabel alloc] initWithFrame:CGRectMake(5, self.offset, self.frame.size.width, 2)];
     line.backgroundColor = [UIColor blackColor];
@@ -256,7 +311,30 @@
     aboutText.frame = CGRectMake(10, self.offset, self.frame.size.width - 20, aboutText.frame.size.height);
     [self addSubview:aboutText];
     self.offset += aboutText.frame.size.height + 10;
+    [self updateSize];*/
+    
+    //Update looks to new layout
+    //Instead of adding a line, let's make the description in a bubble, with white text and add an arrow to the far left.
+    //When the arrow is tapped, the section will collapse and ajust all other views
+    CollapseableView *thisView = [[CollapseableView alloc] initWithFrame:CGRectMake(10, self.offset, self.frame.size.width - 20, self.frame.size.height)];
+    thisView.title = text;
+    [self addSubview:thisView];
+    
+    //Now, add content
+    UILabel *about = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width - 20, self.frame.size.height)];
+    about.numberOfLines = 0;
+    about.text = description;
+    about.font = [UIFont systemFontOfSize:14];
+    [about sizeToFit];
+    
+    about.frame = CGRectMake(10, 0, self.frame.size.width, about.frame.size.height);
+    [thisView addContent:about];
+    
+    
     [self updateSize];
+    [thisView updateFrameSize];
+    thisView.center = CGPointMake(self.frame.size.width/2, self.offset + thisView.frame.size.height/2);
+    self.offset += thisView.frame.size.height + 10;
 }
 
 -(void)addButton:(NSString *)title target:(SEL)selector{
@@ -283,6 +361,71 @@
     //Open website in safari
     [[UIApplication sharedApplication] openURL:self.currentSite];
     
+}
+
+-(void)adjustFrames{
+    orginHeight = self.frame.size.height;
+    newY = 0;
+    
+    [UIView animateWithDuration:.5 animations:^{
+    for (UIView *temp in self.subviews) {
+        
+        if(![temp isKindOfClass:[UIImageView class]]){
+            if ([temp isKindOfClass:[CollapseableView class]]) {
+                if (newY != 0) {
+                    temp.frame = CGRectMake(temp.frame.origin.x, newY, temp.frame.size.width, temp.frame.size.height);
+                }
+            }
+            else{
+                temp.frame = CGRectMake(temp.frame.origin.x, newY, temp.frame.size.width, temp.frame.size.height);
+
+            }
+            
+            newY+= temp.frame.size.height;
+        }
+        
+    }
+    self.offset = newY + 25;
+    [self updateSize];
+    }];
+}
+
+//Collaspse all collapseable view
+-(void)collapseAll{
+    orginHeight = self.frame.size.height;
+    newY = -25;
+    UIView *prevView;
+    
+    
+    for (UIView *temp in self.subviews) {
+        
+        //NSLog(@"Class found: %@", [[temp class] description]);
+        if(![temp isKindOfClass:[UIImageView class]]){
+            if ([temp isKindOfClass:[CollapseableView class]]) {
+                CollapseableView *collView = (CollapseableView *)temp;
+                //NSLog(@"Found: %@", collView.title);
+                
+                [collView collapseView];
+                
+                //Add target to collapseable view to allow them to expand
+                [collView.arrow addTarget:self action:@selector(adjustFrames) forControlEvents:UIControlEventTouchUpInside];
+                [collView.layer removeAllAnimations];
+                
+                //temp.backgroundColor = [UIColor redColor];
+                newY+= collView.minHeight;
+                
+                collView.miniView.center = CGPointMake(collView.frame.size.width/2, collView.miniView.center.y);
+            }
+            else newY += temp.frame.size.height;
+            temp.center = CGPointMake(temp.center.x, newY);
+            
+            if (newY != 0) {
+                prevView = temp;
+            }
+        }
+    }
+    self.offset = newY + 25;
+    [self updateSize];
 }
 
 

@@ -10,6 +10,8 @@
 #import "ImageButton.h"
 #import "HopperData.h"
 #import "TextInputView.h"
+#import "CollapseableView.h"
+#import <MapKit/MapKit.h>
 
 @interface CustomTableView : UIScrollView
 {
@@ -18,6 +20,7 @@
     TextInputView *textInput;
     NSURL *thisURL;
     ImageButton *addComment, *submit;
+    float orginHeight, newY;
 }
 @property (nonatomic) float offset;
 @property (nonatomic, strong) NSURL *currentSite;
@@ -30,5 +33,9 @@
 -(void)addSection:(NSString *)text info:(NSString *)description;
 -(void)addButton:(NSString *)title target:(SEL)selector;
 -(void)addRatingSystemWithScale:(NSRange)range title:(NSString *)titleOfSection helpText:(NSString *)help submissionURl:(NSURL *)sendingPlace;
+-(void)addMapWithPoints:(NSArray *)arrayOfPoints;
 -(void)addView:(UIView *)viewToAdd;
+-(void)updateSize;
+-(void)collapseAll;
+
 @end
